@@ -13,9 +13,13 @@
  */
 
 /* home-page为页面最外层包装的命名空间 */
-.abc{
+.login-page{
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    background: #000;
+    font-size: 32px;
+    text-align: center;
     color: red;
-    width: 100px;
-    height: 200px;
 }
 
