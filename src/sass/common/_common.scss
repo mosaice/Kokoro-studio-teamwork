@@ -1,0 +1,14 @@
+/**
+ * 多个页面通用的方法
+ * 例子如下
+ */
+
+ /**
+  * 父级框下的垂直绝对定位
+  */
+ @mixin vertical-center () {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   margin: auto;
+ }

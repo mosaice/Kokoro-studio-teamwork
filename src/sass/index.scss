@@ -1,0 +1,26 @@
+/* 按需引入共用文件 */
+@import "common/index";
+
+/* 按需引入组件文件 */
+@import "components/header";
+
+/**
+ * 需署名
+ * 修改他人代码需加注释
+ * 每个页面需要在最外一层加一个命名空间作用的class
+ * 若无特殊情况 class嵌套不应该超过2层
+ */
+
+/**
+ * 作者: kokoro
+ * 作用: 首页banner轮播图调用 首页右侧切换调用
+ * 创建日期: 2016-04-28
+ * 修改日期: 2016-04-28
+ */
+
+.index-page {
+  .header {
+    display: none;  // 修改他人代码格式如后 old - display: block | editor - kokoro 
+    background: #000;
+  }
+}
