@@ -17,7 +17,7 @@ gulp.task('sass', function () {
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(reload({stream: true}))
     .pipe(sourcemaps.write())
-    .pipe(px3rem({baseDpr: 1, remUnit: 14}))
+    .pipe(px3rem({baseDpr: 1, remUnit: 45}))
     .pipe(gulp.dest(config.dest))
     .pipe(filter('**/*.css'))
     .pipe(browserSync.reload({stream: true}))

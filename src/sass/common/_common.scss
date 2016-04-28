@@ -12,3 +12,9 @@
    bottom: 0;
    margin: auto;
  }
+
+// 头顶 - momo
+@mixin web-top () {
+  height: 40px;
+  background-color: $primary-color;
+}

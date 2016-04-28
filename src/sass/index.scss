@@ -1,7 +1,19 @@
-@import "./components/webtop"; // 首页头顶
-
+// 首页制作 - Momo
 .index-page {
   width: 100%;
-  height: 40px;
-  background-color: $primary-color;
+  .web-top {
+    @include web-top;
+  }
+  .search-bar {
+    max-height: 88px;
+    padding-bottom: 17px;
+    .bar-img {
+      margin-top: 28px;
+    }
+    .from-group {
+      input[type=text] {
+        border: 1px solid #000;
+      }
+    }
+  }
 }
