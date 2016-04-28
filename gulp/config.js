@@ -5,7 +5,7 @@ var staticPath = dest + '/static';
 module.exports = {
   sass: {
     all: src + '/sass/**/*.scss',
-    src: src + '/sass/*.scss',
+    src: src + '/sass/*.main.scss',
     dest: staticPath + '/css',
     compile: staticPath + '/css/*.css',
     settings: {}

@@ -1,9 +1,3 @@
-/* 按需引入共用文件 */
-@import "common/index";
-
-/* 按需引入组件文件 */
-@import "components/header";
-
 /**
  * 需署名
  * 修改他人代码需加注释
@@ -18,9 +12,11 @@
  * 修改日期: 2016-04-28
  */
 
-.index-page {
+/* home-page为页面最外层包装的命名空间 */
+.home-page {
+  /* header为通用的组件 在home页和通用颜色不一 */
   .header {
-    display: none;  // 修改他人代码格式如后 old - display: block | editor - kokoro 
+    padding: 10px;  // 修改他人代码格式如后 old - padding: 0; | editor - kokoro
     background: #000;
   }
 }

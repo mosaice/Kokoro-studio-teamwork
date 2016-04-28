@@ -1,0 +1,8 @@
+/* 引入共用文件 */
+@import "common/index";
+
+/* 引入组件文件 */
+@import "components/header";
+
+/* 自己建的文件需要添加依赖到这个文件中 */
+@import "home";
