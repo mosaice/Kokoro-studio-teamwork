@@ -18,3 +18,13 @@
   height: 40px;
   background-color: $primary-color;
 }
+
+// 清楚浮动 - momo
+@mixin clearfix () {
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+}

@@ -1,0 +1,58 @@
+// 首页搜索块
+.search-bar {
+  max-height: 88px;
+  padding-bottom: 17px;
+  position: relative;
+  // 列表图片部分
+  .bar-img-box {
+    line-height: 88px;
+  }
+  .bar-img {
+    padding-left: 40px;
+  }
+  // 列表表单部分
+  .from-group {
+    height: 50px;
+    padding-left: 27px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    &:after {
+      @include clearfix;
+    }
+    input[type=text] {
+      float: left;
+      width: 320px;
+      height: 52px;
+      line-height: 52px;
+      font-size: 18px;
+      margin: 0;
+      padding-left: 26px;
+      box-sizing: border-box;
+      border: 1px solid #484848;
+      border-radius: 30px 0 0 30px;
+      -webkit-appearance: none;
+      &:placeholder {
+        color: #949494;
+      }
+    }
+    .search-btn {
+      float: left;
+      width: 54px;
+      height: 52px;
+      padding: 0;
+      border: 1px solid #484848;
+      box-sizing: border-box;
+      border-left: 0;
+      border-radius: 0 30px 30px 0;
+      background-color: #fff;
+      .search-icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

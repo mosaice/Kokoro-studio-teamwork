@@ -1,20 +1,112 @@
 // 首页制作 - Momo
-$base-size: 20px;
-
+@import "./components/search-bar"; // 搜索栏
+@import "./components/mo-menu"; // 菜单
+@import "./components/mo-list"; // 列表
+@import "./components/mo-icon"; // 小图标
+// 初始化
+.row{
+  margin: 0;
+}
+.row .col {
+  padding: 0;
+}
 .index-page {
   width: 100%;
   .web-top {
     @include web-top;
   }
-  .search-bar {
-    max-height: 88px;
-    padding-bottom: 17px;
-    .bar-img {
-      margin-top: 28px;
+  .log-btn {
+    position: absolute;
+    right: 36px;
+    display: block;
+    color: #787878;
+    font-size: 30px;
+    line-height: 88px;
+  }
+  // banner图切换样式
+  .slider-box {
+    max-height: 380px;
+    .indicators {
+      z-index: 10;
+      .indicator-item {
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+      }
+      .active {
+        background-color: $primary-color;
+      }
     }
-    .from-group {
-      input[type=text] {
-        border: 1px solid #000;
+  }
+  // 中间广告样式
+  .advertising-box{
+    height: 193px;
+    border-top: 16px solid #f4f4f4;
+    border-bottom: 16px solid #f4f4f4;
+    .advertising-pic{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  // 首页第二个广告样式
+  .navmenu{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f4f4f4;
+    .navmenu-bg{
+      background-color: #fff;
+      // 左边盒子
+      .navmenu-l{
+        width: 340px;
+        height: 295px;
+        float: left;
+        position: relative;
+        .navmenu-pic{
+          display: block;
+          width: 100%;
+          max-width: 340px;
+          max-height: 295px;
+        }
+        .navmenu-content{
+          position: absolute;
+          top: 60px;
+          left: 20px;
+          color: #fff;
+          h3{
+            font-size: 30px;
+            margin-bottom: 17px;
+          }
+          p{
+            font-size: 24px;
+          }
+        }
+      }
+      // 右边盒子
+      .navmenu-r{
+        width: 399px;
+        height: 295px;
+        float: right;
+        position: relative;
+        .navmenu-pic{
+          display: block;
+          width: 100%;
+          max-width: 399px;
+          max-height: 295px;
+        }
+        .navmenu-content{
+          position: absolute;
+          top: 60px;
+          right: 20px;
+          color: #fff;
+          h3{
+            font-size: 30px;
+            margin-bottom: 17px;
+          }
+          p{
+            font-size: 24px;
+          }
+        }
       }
     }
   }

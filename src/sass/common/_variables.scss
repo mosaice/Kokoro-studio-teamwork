@@ -2,6 +2,9 @@
  * 多个页面公用的变量存放文件
  * 例子如下
  */
-
 /* 页面主色调 蓝色 */
-$primary-color: #72cfc7;  // old - color = bule || editor - momo
+$primary-color: #72cfc7; // old - color = bule || editor - momo
+
+.offset-15 { //自定义偏移量
+  margin-right: 15px;
+}

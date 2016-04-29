@@ -2,99 +2,99 @@
 //   * 若需要时可以引用修改的rem媒体查询定义文件
 //   * 例如下 320像素为基准的rem配置
 //   */
-//  $basesize: 40/750;
-//
-//  @media only screen and (max-width: 960px),
-//  only screen and (max-device-width:960px) {
-//    html,
-//    body {
-//      font-size: $basesize * 960px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 800px),
-//  only screen and (max-device-width:800px) {
-//    html,
-//    body {
-//      font-size: $basesize * 800px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 720px),
-//  only screen and (max-device-width:720px) {
-//    html,
-//    body {
-//      font-size: $basesize * 720px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 640px),
-//  only screen and (max-device-width:640px) {
-//    html,
-//    body {
-//      font-size: $basesize * 640px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 600px),
-//  only screen and (max-device-width:600px) {
-//    html,
-//    body {
-//      font-size: $basesize * 600px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 540px),
-//  only screen and (max-device-width:540px) {
-//    html,
-//    body {
-//      font-size: $basesize * 540px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 480px),
-//  only screen and (max-device-width:480px) {
-//    html,
-//    body {
-//      font-size: $basesize * 480px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 414px),
-//  only screen and (max-device-width:414px) {
-//    html,
-//    body {
-//      font-size: $basesize * 414px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 400px),
-//  only screen and (max-device-width:400px) {
-//    html,
-//    body {
-//      font-size: $basesize * 400px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 375px),
-//  only screen and (max-device-width:375px) {
-//    html,
-//    body {
-//      font-size: $basesize * 375px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 360px),
-//  only screen and (max-device-width:360px) {
-//    html,
-//    body {
-//      font-size: $basesize * 360px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 320px),
-//  only screen and (max-device-width:320px) {
-//    html,
-//    body {
-//      font-size: $basesize * 320px; /*no*/
-//    }
-//  }
-//  @media only screen and (max-width: 240px),
-//  only screen and (max-device-width:240px) {
-//    html,
-//    body {
-//      font-size: $basesize * 240px; /*no*/
-//    }
-//  }
+ $basesize: 40/750;
+
+ @media only screen and (max-width: 960px),
+ only screen and (max-device-width:960px) {
+   html,
+   body {
+     font-size: $basesize * 960px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 750px),
+ only screen and (max-device-width:750px) {
+   html,
+   body {
+     font-size: $basesize * 750px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 720px),
+ only screen and (max-device-width:720px) {
+   html,
+   body {
+     font-size: $basesize * 720px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 640px),
+ only screen and (max-device-width:640px) {
+   html,
+   body {
+     font-size: $basesize * 640px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 600px),
+ only screen and (max-device-width:600px) {
+   html,
+   body {
+     font-size: $basesize * 600px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 540px),
+ only screen and (max-device-width:540px) {
+   html,
+   body {
+     font-size: $basesize * 540px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 480px),
+ only screen and (max-device-width:480px) {
+   html,
+   body {
+     font-size: $basesize * 480px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 414px),
+ only screen and (max-device-width:414px) {
+   html,
+   body {
+     font-size: $basesize * 414px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 400px),
+ only screen and (max-device-width:400px) {
+   html,
+   body {
+     font-size: $basesize * 400px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 375px),
+ only screen and (max-device-width:375px) {
+   html,
+   body {
+     font-size: $basesize * 375px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 360px),
+ only screen and (max-device-width:360px) {
+   html,
+   body {
+     font-size: $basesize * 360px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 320px),
+ only screen and (max-device-width:320px) {
+   html,
+   body {
+     font-size: $basesize * 320px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 240px),
+ only screen and (max-device-width:240px) {
+   html,
+   body {
+     font-size: $basesize * 240px; /*no*/
+   }
+ }
 //
 // // /**
 // //  * 若需要时可以引用修改的rem媒体查询定义文件
