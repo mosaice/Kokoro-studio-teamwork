@@ -2,7 +2,7 @@
   * 若需要时可以引用修改的rem媒体查询定义文件
   * 例如下 320像素为基准的rem配置
   */
- $basesize: 40/720;
+ $basesize: 40/750;
 
  @media only screen and (max-width: 960px),
  only screen and (max-device-width:960px) {
@@ -95,7 +95,7 @@
      font-size: $basesize * 240px; /*no*/
    }
  }
-=======
+
 // /**
 //  * 若需要时可以引用修改的rem媒体查询定义文件
 //  * 例如下 320像素为基准的rem配置
@@ -193,4 +193,3 @@
 //     font-size: $base-size * 0.75; /*no*/
 //   }
 // }
->>>>>>> 92fc9102e7993b102f7a27dae2b4a7b53cac4f06
