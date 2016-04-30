@@ -28,3 +28,37 @@
 	overflow: hidden;
 	visibility: hidden;
 }
+// 公共class 方法
+.row{
+  margin: 0;
+}
+.row .col {
+  padding: 0;
+}
+.clearfix:after {
+  visibility:hidden;
+  display:block;
+  font-size:0;
+  content:" ";
+  clear:both;
+  height:0;
+}
+.clearfix {
+  zoom:1;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;height: auto;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.full, html {
+  height: 100%;
+}
+.web-top {
+  height: 40px;
+  background-color: $primary-color;
+}

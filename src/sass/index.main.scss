@@ -2,22 +2,11 @@
 @import "common/index";
 
 /* 引入组件文件 */
-@import "components/header";
+@import "components/index";
 
-/* 自己建的文件需要添加依赖到这个文件中 */
-@import "home";
-@import "login";
-
-// 组件样式 - Momo
-@import "components/search-bar"; // 搜索栏
-@import "components/mo-menu"; // 菜单
-@import "components/mo-list"; // 列表
-@import "components/mo-icon"; // 小图标
-@import "components/top-title"; // 通用的头顶标题
-@import "components/mo-checkbox";// checkbox样式重写
 
 // 首页样式 - Momo
-@import "view/home/index";
+@import "views/home/index";
 
 // 收货样式 - Momo
-@import "view/orders/index"
+@import "views/orders/index"

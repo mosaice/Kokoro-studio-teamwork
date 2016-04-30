@@ -14,6 +14,7 @@ input[type=checkbox]+label:before{
   height: 30px;
   border-radius: 50%;
   margin-top: -2px;
+  border: 1px solid #7c7a7a;
 }
 [type="checkbox"]:checked+label:before{
   top: -4px;

@@ -1,5 +1,6 @@
-// 订单页面样式
-@import "../../components/part-title"; // 订单页面的每个版块的title -Momo
+// 订单页面样式 - Momo
+@import "./orders-btn";
+@import "./ordes-title";
 .orders-content {
   height: 160px;
   padding-left: 36px;

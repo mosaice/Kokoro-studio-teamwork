@@ -1,0 +1,19 @@
+// 个人中心 - libang
+  .li-header {
+    height: 90px;
+    line-height: 90px;
+    font-size: 30px;
+    background: #fff;
+    .left {
+      width: 30px;
+      height: 40px;
+      margin-top:20px;
+      margin-left: 20px;
+    }
+  }
+
+// <div class="li-header center-align amber-text text-darken-2">
+//   <a href="#"><img src="static/assets/images/icon/back.png" alt="" title="" class="left"></a>
+//   我的
+// </div>
+// 不想让文字变色 把amber-text text-darken-2 去掉即可
