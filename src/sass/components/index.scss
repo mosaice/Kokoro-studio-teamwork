@@ -1,8 +1,7 @@
 // 引入全部组件 - libang
-@import "./mo-checkbox"; // 重写按钮样式
-@import "./top-title"; // 头顶标题样式
-@import "./li-footer"; // 酒店图片列表底部
-@import "./li-header"; // 公共头部
-@import "./li-image-list"; // 酒店图片列表
-@import "./li-list"; // 个人中心列表
-@import "./li-name"; // 个人中心个人信息
+@import "./footer"; //底部组件
+@import "./header"; //头部组件
+@import "./list"; //列表组件
+@import "./user"; //用户组件
+@import "./top-title";// 头顶标题
+@import "./mo-checkbox"; // 重写单选按钮
