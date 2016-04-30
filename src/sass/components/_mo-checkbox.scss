@@ -1,0 +1,24 @@
+// 重写了input[type=checkbox] - Momo
+
+[type="checkbox"]+label{
+  height: 24px;
+  line-height: 1;
+  padding-left: 62px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+input[type=checkbox]+label:before{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-top: -2px;
+}
+[type="checkbox"]:checked+label:before{
+  top: -4px;
+  left: -5px;
+  width: 15px;
+  height: 30px;
+  border-radius: 0;
+}

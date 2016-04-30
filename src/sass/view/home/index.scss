@@ -1,8 +1,5 @@
 // 首页制作 - Momo
-@import "../../components/search-bar"; // 搜索栏
-@import "../../components/mo-menu"; // 菜单
-@import "../../components/mo-list"; // 列表
-@import "../../components/mo-icon"; // 小图标
+
 // 初始化
 .row{
   margin: 0;
@@ -10,11 +7,11 @@
 .row .col {
   padding: 0;
 }
+.web-top {
+  @include web-top;
+}
 .index-page {
   width: 100%;
-  .web-top {
-    @include web-top;
-  }
   .log-btn {
     position: absolute;
     right: 36px;

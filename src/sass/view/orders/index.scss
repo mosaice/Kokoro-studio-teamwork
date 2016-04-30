@@ -1,0 +1,58 @@
+// 订单页面样式
+@import "../../components/part-title"; // 订单页面的每个版块的title -Momo
+.orders-content {
+  height: 160px;
+  padding-left: 36px;
+  padding-right: 48px;
+  border-bottom: 1px solid #e1e1e1;
+  position: relative;
+  .orders-content-text {
+    width: 450px;
+    .orders-content-text-t {
+      h2 {
+        font-size: 24px;
+        color: #565656;
+      }
+      p {
+        font-size: 24px;
+        color: #f00;
+      }
+    }
+    .orders-content-text-b{
+      font-size: 24px;
+    }
+  }
+}
+.orders-content-l {
+  line-height: 160px;
+}
+.orders-content-pic {
+  width: 120px;
+  height: 120px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  margin-left: 60px;
+}
+
+// 食物的样式
+.orders-content-text-food{
+  margin-top: 40px;
+  .orders-content-text-b{
+    margin-top: 34px;
+    .text-menu{
+      color: #787878;
+      strong{
+        font-weight: normal;
+        vertical-align: middle;
+      }
+      span{
+        color: #949494;
+        font-size: 18px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

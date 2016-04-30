@@ -1,0 +1,23 @@
+// 通用头顶标题栏 - Momo
+.top-title{
+  position: relative;
+  height: 88px;
+  line-height: 88px;
+  padding-left: 20px;
+  border-bottom: 1px solid #e1e1e1;
+  .top-return{
+    width: 22px;
+    height: 49px;
+  }
+  h1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 30px;
+    color: #f60;
+    text-align: center;
+    line-height: 88px;
+  }
+}

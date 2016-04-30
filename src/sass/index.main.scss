@@ -8,5 +8,16 @@
 @import "home";
 @import "login";
 
-// 首页样式 - momo
+// 组件样式 - Momo
+@import "components/search-bar"; // 搜索栏
+@import "components/mo-menu"; // 菜单
+@import "components/mo-list"; // 列表
+@import "components/mo-icon"; // 小图标
+@import "components/top-title"; // 通用的头顶标题
+@import "components/mo-checkbox";// checkbox样式重写
+
+// 首页样式 - Momo
 @import "view/home/index";
+
+// 收货样式 - Momo
+@import "view/orders/index"
