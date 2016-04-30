@@ -1,6 +1,11 @@
 // 导入所有的页面sass
 
-@import "./home/home"; //首页-editor = momo
 @import "./hotel-image-list"; //酒店图片列表 -editor = libang
 @import "./personal-center"; //个人中心 -editor = libang
 @import "./thank-feedback"; //感谢反馈 -editor = libang
+
+// 首页样式 - Momo
+@import "./home/index";
+
+// 收货样式 - Momo
+@import "./orders/index";

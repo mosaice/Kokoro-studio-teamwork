@@ -1,3 +1,23 @@
 .orders-btn{
-
+  padding-right: 50px;
+  margin-left: -20px;
+  padding-bottom: 10px;
+  .btn{
+    height: 50px;
+    line-height: 24px;
+    font-size: 24px;
+    padding: 0;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  .btn-big{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
+
+// <div class="right mt-10 orders-btn">
+//   <input type="submit" name="" value="删除" class="btn grey-text text-darken-3 mr-20">
+//   <input type="submit" name="" value="去付款" class="btn amber-text text-darken-4 mr-20">
+// </div>

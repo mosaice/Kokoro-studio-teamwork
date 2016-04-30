@@ -4,9 +4,5 @@
 /* 引入组件文件 */
 @import "components/index";
 
-
-// 首页样式 - Momo
-@import "views/home/index";
-
-// 收货样式 - Momo
-@import "views/orders/index";
+// 引入
+@import "views/index";
