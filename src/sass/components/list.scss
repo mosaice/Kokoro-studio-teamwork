@@ -1,0 +1,141 @@
+// 酒店图片列表 - libang
+
+.only-image-list {
+  li {
+    padding: 10px 20px;
+  }
+}
+
+// <div class="only-image-list">
+//   <ul>
+//     <li><img src="static/assets/images/content/bg01.jpg" alt="" title="" class="img-responsive center-block"></li>
+//     <li><img src="static/assets/images/content/bg01.jpg" alt="" title="" class="img-responsive center-block"></li>
+//   </ul>
+// </div>
+
+// 列表样式 - Momo
+  // 列表开头
+  .list-title{
+    height: 70px;
+    line-height: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    h1{
+      float: left;
+      line-height: 70px;
+      font-size: $m-fontSize;
+      color: #444;
+    }
+    .list-title-more{
+      float: right;
+      display: block;
+      font-size: 16px;
+      color: #787878;
+    }
+  }
+  // 列表内容部分
+  .list-content{
+    li{
+      height: 260px;
+      padding: 20px;
+      border-top: 1px solid $border-color;
+      .list-content-pic{
+        display: block;
+        float: left;
+        width: 100%;
+        height: 100%;
+        max-width: 320px;
+        max-height: 225px;
+      }
+      .list-text{
+        padding-left: 340px;
+        font-size: 22px;
+        .list-text-title{
+          font-size: $l-fontSize;
+          color: #565656;
+          padding-top: 16px;
+        }
+        p{
+          padding-top: 14px;
+        }
+        .list-text-price{
+          color: #787878;
+          span{
+            color: #fc0101;
+          }
+        }
+        .list-text-type{
+          color: #787878;
+        }
+        .list-text-color{
+          color: #949494;
+          span{
+            margin-right: $l-fontSize;
+          }
+        }
+        .list-text-icon{
+          padding-top: 25px;
+        }
+      }
+    }
+  }
+
+
+//简单的行列表 -libang
+  .simple-row-list {
+    margin-bottom: 15px;
+    ul {
+      background: #fff;
+      padding: 0 20px;
+    }
+    li {
+      height: 100px;
+      line-height: 100px;
+      font-size: 24px;
+      border-bottom: 1px solid $border-color;
+      position: relative;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .mulit {
+      padding: 20px 0;
+      height: 100px;
+      line-height: 1em;
+      p {
+        &:first-child {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .grey-text {
+      font-size: 20px;
+    }
+  }
+// 双行文字
+// <div class="simple-row-list">
+//   <ul>
+//     <li class="mulit">
+//       <p class="red-text">竞嫁网联合建行卡推出筑巢计划
+//         <a href="#"><img src="static/assets/images/icon/front.png" alt="" title="" class="right front"></a>
+//       </p>
+//       <p class="grey-text">最高30万，前100名免息</p>
+//     </li>
+//   </ul>
+// </div>
+
+// 单行文字
+// <div class="simple-row-list">
+//   <ul>
+//     <li>
+//       <p>意见反馈<span class="grey-text">&nbsp;感谢您对竞嫁网提供服务的每一个意见反馈</span>
+//         <a href="#"><img src="static/assets/images/icon/front.png" alt="" title="" class="right front"></a>
+//       </p>
+//     </li>
+//     <li>
+//       <p>客服热线：<span class="red-text">-400-9611-365</span>
+//         <a href="#"><img src="static/assets/images/icon/front.png" alt="" title="" class="right front"></a>
+//       </p>
+//     </li>
+//   </ul>
+// </div>

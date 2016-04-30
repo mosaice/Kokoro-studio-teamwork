@@ -1,6 +1,6 @@
-// 酒店图片列表 - libang
+// 酒店图片底部 - libang
 
-.li-footer {
+.fix-row-footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -21,7 +21,7 @@
   }
 }
 
-// <div class="li-footer row">
+// <div class="fix-row-footer row">
 //   <div class="col s9 valign-wrapper">
 //     <p class="valign">上海外滩华尔道夫酒店</p>
 //   </div>
