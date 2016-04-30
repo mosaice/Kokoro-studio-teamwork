@@ -9,7 +9,7 @@
     h1{
       float: left;
       line-height: 70px;
-      font-size: 26px;
+      font-size: $m-fontSize;
       color: #444;
     }
     .list-title-more{
@@ -24,7 +24,7 @@
     li{
       height: 260px;
       padding: 20px;
-      border-top: 1px solid #e1e1e1;
+      border-top: 1px solid $border-color;
       .list-content-pic{
         display: block;
         float: left;
@@ -37,7 +37,7 @@
         padding-left: 340px;
         font-size: 22px;
         .list-text-title{
-          font-size: 30px;
+          font-size: $l-fontSize;
           color: #565656;
           padding-top: 16px;
         }
@@ -56,7 +56,7 @@
         .list-text-color{
           color: #949494;
           span{
-            margin-right: 30px;
+            margin-right: $l-fontSize;
           }
         }
         .list-text-icon{

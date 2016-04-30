@@ -28,7 +28,7 @@
 	overflow: hidden;
 	visibility: hidden;
 }
-
+// 公共class 方法
 .row{
   margin: 0;
 }
@@ -57,4 +57,8 @@
 }
 .full, html {
   height: 100%;
+}
+.web-top {
+  height: 40px;
+  background-color: $primary-color;
 }
