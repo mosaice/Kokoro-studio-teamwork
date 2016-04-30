@@ -1,8 +1,8 @@
 // 首页制作 - Momo
-@import "./components/search-bar"; // 搜索栏
-@import "./components/mo-menu"; // 菜单
-@import "./components/mo-list"; // 列表
-@import "./components/mo-icon"; // 小图标
+@import "../../components/search-bar"; // 搜索栏
+@import "../../components/mo-menu"; // 菜单
+@import "../../components/mo-list"; // 列表
+@import "../../components/mo-icon"; // 小图标
 // 初始化
 .row{
   margin: 0;

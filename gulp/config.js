@@ -2,7 +2,7 @@ var src = './src';
 var dest = './dist';
 var staticPath = dest + '/static';
 
-module.exports = {
+module.exports = { 
   sass: {
     all: src + '/sass/**/*.scss',
     src: src + '/sass/*.main.scss',
