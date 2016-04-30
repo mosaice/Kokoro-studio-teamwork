@@ -5,8 +5,13 @@
 @import "components/header";
 
 /* 自己建的文件需要添加依赖到这个文件中 */
-@import "home";
-@import "login";
+
 
 // 首页样式 - momo
 @import "index";
+// 个人中心样式 - libang
+@import "personal-center";
+// 酒店图片列表样式 - libang
+@import "hotel-image-list";
+// 感谢反馈样式 - libang
+@import "thank-feedback";
