@@ -79,3 +79,23 @@
       }
     }
   }
+
+  // 颜色列表
+  .color-list {
+    background: #fff;
+    a {
+      color: #000;
+    }
+    .color {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    .color-title {
+      font-size: $m-fontSize;
+      padding: 15px 0;
+    }
+    .col {
+      margin-bottom: 50px;
+    }
+  }
