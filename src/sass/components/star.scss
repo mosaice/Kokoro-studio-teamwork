@@ -1,0 +1,90 @@
+// css画星星代码
+.star_bg {
+  width: 235px;
+  height: 39px;
+  background: url("../assets/images/icon/star01.png") repeat-x;
+  position: relative;
+  overflow: hidden;
+}
+.star {
+  height: 100%;
+  width: 47px;
+  line-height: 6em;
+  position: absolute;
+  z-index: 3;
+}
+.star:hover {
+  // background: url("../assets/images/icon/star.png") repeat-x 0 -20px!important;
+  left: 0;
+  z-index: 2;
+}
+.star_1 {
+  left: 0;
+}
+.star_2 {
+  left: 47px;
+}
+.star_3 {
+  left: 94px;
+}
+.star_4 {
+  left: 141px;
+}
+.star_5 {
+  left: 188px;
+}
+.star_1:hover {
+  width: 47px;
+}
+.star_2:hover {
+  width: 94px;
+}
+.star_3:hover {
+  width: 141px;
+}
+.star_4:hover {
+  width: 188px;
+}
+.star_5:hover {
+  width: 235px;
+}
+label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+/* 幕后的英雄，单选按钮 */
+.score {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+.score:checked + .star {
+  background: url("star.png") repeat-x 0 -20px;
+  left: 0;
+  z-index: 1;
+}
+.score_1:checked ~ .star_1 {
+  width: 47px;
+}
+.score_2:checked ~ .star_2 {
+  width: 94px;
+}
+.score_3:checked ~ .star_3 {
+  width: 141px;
+}
+.score_4:checked ~ .star_4 {
+  width: 188px;
+}
+.score_5:checked ~ .star_5 {
+  width: 235px;
+}
+.star_bg:hover .star {
+  background-image: none;
+}
+/* for IE6-IE8 JS 交互 */
+.star_checked {
+  background: url("star.png") repeat-x 0 -20px;
+  left: 0;
+  z-index: 1;
+}
