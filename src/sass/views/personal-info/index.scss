@@ -1,0 +1,56 @@
+// 个人资料 - libang
+// @import "./list";
+// @import "./user";
+
+.personal-info-page {
+  background: $background-color;
+  min-height: 100%;
+  color: #565656;
+  .back-header {
+    margin-bottom: 20px;
+  }
+  .simple-row-list {
+    margin-bottom: 20px;
+  }
+  .simple-row-list li {
+    height: 90px;
+    line-height: 90px;
+    p {
+      height: 90px;
+      line-height: 90px;
+    }
+    .avtor {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-top: 10px;
+    }
+    .right {
+      margin-right: 50px;
+      color: #787878;
+    }
+  }
+  .front {
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    margin-top: -22.5px;
+  }
+  .save {
+    display: block;
+    margin:35px auto ;
+    width: 430px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    background: #ff6600;
+    border-radius: 10px;
+    font-size: $m-fontSize;
+  }
+  p.center-align {
+    font-size: $l-fontSize;
+    color: #565656;
+  }
+}
