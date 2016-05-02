@@ -1,0 +1,14 @@
+
+.wedding-product-page {
+  background: $background-color;
+  .only-image-list {
+    li {
+      padding: 20px;
+      margin-bottom: 15px;
+      background: #fff;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

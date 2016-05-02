@@ -34,3 +34,23 @@
 //   </a>
 //   <h1>待评价订单</h1>
 // </div>
+.line-title {
+  position: relative;
+  background: #fff;
+  h2 {
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    font-size: $l-fontSize;
+    padding: 0 10px;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+  }
+  .line {
+    border-top: 1px solid $border-color;
+    position: absolute;
+    top: 39px;
+    width: 100%;
+  }
+}
