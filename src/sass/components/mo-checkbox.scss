@@ -1,6 +1,7 @@
 // 重写了input[type=checkbox] - Momo
 
 [type="checkbox"]+label{
+  max-width: 50%;
   height: 24px;
   line-height: 1;
   padding-left: 62px;

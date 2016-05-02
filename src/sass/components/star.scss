@@ -1,10 +1,11 @@
 // css画星星代码
 .star_bg {
-  width: 235px;
+  width: 225px;
   height: 39px;
   background: url("../assets/images/icon/star01.png") repeat-x;
   position: relative;
   overflow: hidden;
+  background-size: contain;
 }
 .star {
   height: 100%;
@@ -82,9 +83,8 @@ label {
 .star_bg:hover .star {
   background-image: none;
 }
-/* for IE6-IE8 JS 交互 */
-.star_checked {
-  background: url("star.png") repeat-x 0 -20px;
-  left: 0;
-  z-index: 1;
+@media (min-width:414px) {
+  .star_bg {
+    width: 234px;
+  }
 }
