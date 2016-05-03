@@ -4,13 +4,19 @@
   height: 88px;
   line-height: 88px;
   padding-left: 20px;
+  padding-right: 20px;
   border-bottom: 1px solid #e1e1e1;
+  a{
+    position: relative;
+    z-index: 10;
+  }
   .top-return{
     width: 22px;
     height: 49px;
   }
   h1{
     position: absolute;
+    z-index: 1;
     left: 0;
     right: 0;
     top: 0;
@@ -22,6 +28,12 @@
   }
 }
 
+// <div class="row top-title">
+//   <a href="">
+//     <img src="static/assets/images/icon/arrow-r.png" alt="" class="top-return" title="">
+//   </a>
+//   <h1>待评价订单</h1>
+// </div>
 .line-title {
   position: relative;
   background: #fff;

@@ -1,7 +1,15 @@
+
 @media only screen and (max-width: 960px), only screen and (max-device-width: 960px) {
   html,
   body {
     font-size: 51.2px;
+  }
+}
+
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+  html,
+  body {
+    font-size: 40.96px;
   }
 }
 
@@ -37,6 +45,13 @@
   html,
   body {
     font-size: 28.8px;
+  }
+}
+
+@media only screen and (max-width: 435px), only screen and (max-device-width: 435px) {
+  html,
+  body {
+    font-size: 23.2px;
   }
 }
 
