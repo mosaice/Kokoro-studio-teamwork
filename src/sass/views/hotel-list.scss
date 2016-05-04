@@ -1,123 +1,173 @@
 //婚礼酒店列表  xiaowei
 //
-
-.load1 {
-	width: 612px;
-	height:44px;
-	background-color: #D7D7D7;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 70px;
-	margin-bottom: 45px;
-}
-.load-text {
-   font-size: 20px;
-   color: #555555;
-	line-height: 44px;
-	
-}
-.wedding-suit-nav {
-  flex-direction: column;
-  .nav-list {
-    display: flex;
-    li {
-      position: relative;
-      width: 188px;
-      height: 60px;
-      line-height: 60px;
-      p {
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto;
-        border-right: 1px solid #f2f2f2; /*no*/
-        font-size: 26px;
-        color: #565656;
-      }
-      &:last-child p {
-        border: 0;
-      }
-    }
-    .nav-list-optional p {
-      background: url("../assets/images/icon/nav-icon01.png") 122px center no-repeat;
-      background-size: 22px 12px;
-    }
-    .active p{
-      background: url("../assets/images/icon/nav-icon02.png") 122px center no-repeat;
-      background-size: 22px 12px;
-    }
-  }
-}
-.bar-img1 {
-	width: 22px;
-	height: 39px;
-	vertical-align: middle;
-	margin-left: 20px;
-}
-
-.search-bg{
-	background-color: #F2F2F2
-}
- .list-content1{
-    li{
-      
-      padding: 20px;
-      border-top: 1px solid $border-color;
-      .list-content-pic{
-        display: block;
-        float: left;
-        width: 100%;
-        height: 100%;
-        max-width: 184px;
-        max-height: 134px;
-      }
-      .list-text{
-        padding-left: 215px;
-        font-size: 22px;
-        .list-text-title{
-          font-size:30px;;
-          color: #565656;
-          padding-top: 16px;
-        }
-        p{
-          padding-top: 14px;
-        }
-        .list-text-price{
-		  font-size: 22px;
-          color: #787878;
-          span{
-            color: #fc0101;
-          }
-        }
-        .list-text-type{
-          color: #787878;
-        }
-        .list-text-color{
-		  font-size: 22px;
-          color: #949494;
-          span{
-            margin-right: $l-fontSize;
-          }
-        }
-        .list-text-icon{
-          margin-top: -30px;
-        }
-      }
-    }
-  }
-.icon-round {
-	display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 20%;
-	float: right;
-	margin: 0 5px;
-	
+.hotel-list-page {
+	.nav-area-list {
+		width: 100%;
+		display: none;
+		background-color: white;
+		font-size: 26px;
+		font-family: "微软雅黑";
+		z-index: 99;
+		padding-bottom: 100px;
+		.nav-area-list-optional {
+			width: 700px;
+		}
+	}
+	.load1 {
+		width: 612px;
+		height: 44px;
+		background-color: #D7D7D7;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 70px;
+		margin-bottom: 45px;
+	}
+	.load-text {
+		font-size: 20px;
+		color: #555555;
+		line-height: 44px;
+	}
+	.wedding-suit-nav1 {
+		flex-direction: column;
+		.nav-list {
+			display: flex;
+			li {
+				position: relative;
+				width: 750px;
+				height: 60px;
+				line-height: 60px;
+				border-bottom: 1px solid #f2f2f2;
+				p {
+					height: 40px;
+					line-height: 40px;
+					text-align: center;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+					border-right: 1px solid #f2f2f2;
+					/*no*/
+					font-size: 26px;
+					color: #565656;
+				}
+				&:last-child p {
+					border: 0;
+				}
+			}
+			.nav-list-optional p {
+				background: url("../assets/images/icon/nav-icon01.png") 122px center no-repeat;
+				background-size: 22px 12px;
+			}
+			.active p {
+				background: url("../assets/images/icon/nav-icon02.png") 122px center no-repeat;
+				background-size: 22px 12px;
+			}
+		}
+	}
+	.bar-img1 {
+		width: 22px;
+		height: 39px;
+		vertical-align: middle;
+		margin-left: 20px;
+	}
+	.search-bg {
+		background-color: #F2F2F2
+	}
+	.list-content1 {
+		li {
+			padding: 20px;
+			border-top: 1px solid $border-color;
+			.list-content-pic {
+				display: block;
+				float: left;
+				width: 100%;
+				height: 100%;
+				max-width: 184px;
+				max-height: 134px;
+			}
+			.list-text {
+				padding-left: 215px;
+				font-size: 22px;
+				.list-text-title {
+					font-size: 30px;
+					;
+					color: #565656;
+					padding-top: 16px;
+				}
+				p {
+					padding-top: 14px;
+				}
+				.list-text-price {
+					font-size: 22px;
+					color: #787878;
+					span {
+						color: #fc0101;
+					}
+				}
+				.list-text-type {
+					color: #787878;
+				}
+				.list-text-color {
+					font-size: 22px;
+					color: #949494;
+					span {
+						margin-right: $l-fontSize;
+					}
+				}
+				.list-text-icon {
+					margin-top: -30px;
+				}
+			}
+		}
+	}
+	.icon-round {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		border-radius: 20%;
+		float: right;
+		margin: 0 5px;
+	}
+	//二级菜单样式
+	.nav-area-list-optional {
+		width: 750px;
+		&.active {
+			background: url("../assets/images/icon/hook.png") no-repeat;
+			background-size: 30px;
+			background-position: 650px 10px;
+		}
+	}
+	.nav-list-optional:hover ul {
+		display: block;
+	}
+	.nav-area-list-optional {
+		color: #434343;
+		padding-left: 65px;
+		&.active {
+			span {
+				color: #FF6500;
+			}
+		}
+	}
+	.area-list-img {
+		width: 30px;
+		height: 29px;
+		vertical-align: middle;
+	}
+	.mask {
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		position: fixed;
+		top: 190px;
+		left: 0;
+		
+	}
+	//	.img-post {
+	//		text-align: right;
+	//	}
 }
