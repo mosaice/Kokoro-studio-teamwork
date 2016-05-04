@@ -39,15 +39,8 @@
     }
   }
   .dropdown-content {
-    display: block;
-    position: absolute;
-    left: 211px;
-    top: 219px;
     margin-top: 61px;
-    padding-bottom: 160px;
-    width: 491px;
     border: 2px solid #ababab;
-    opacity: 1;
     box-shadow: none;
     li {
       width: 100%;
@@ -60,6 +53,7 @@
         color: #787878;
       }
       .active {
+        color: #fff;
         background-color: $primary-color;
       }
     }

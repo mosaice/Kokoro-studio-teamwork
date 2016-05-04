@@ -13,12 +13,13 @@
  * 修改日期: 2016-05-03
  */
 
-(function ($) {
-  $(init);
-
-  function init() {
-    $('.dropdown-select').click(function () {
-      $('.feedbackinfo > img').css('display', 'block');
-    })
-  }
-})(jQuery)
+$(function () {
+  $('.dropdown-select').click(function () {
+    $('.feedbackinfo > img').fadeIn(300);
+  })
+  $('#dropdown1 a').click(function () {
+    $('.feedbackinfo > img').fadeOut(300);
+    var html = $(this).html();
+    $('.dropdown-select').html(html);
+  })
+})
