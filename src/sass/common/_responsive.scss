@@ -11,6 +11,13 @@
      font-size: $basesize * 960px; /*no*/
    }
  }
+ @media only screen and (max-width: 768px),
+ only screen and (max-device-width:768px) {
+   html,
+   body {
+     font-size: $basesize * 768px; /*no*/
+   }
+ }
  @media only screen and (max-width: 750px),
  only screen and (max-device-width:750px) {
    html,
@@ -44,6 +51,13 @@
    html,
    body {
      font-size: $basesize * 540px; /*no*/
+   }
+ }
+ @media only screen and (max-width: 435px),
+ only screen and (max-device-width:435px) {
+   html,
+   body {
+     font-size: $basesize * 435px; /*no*/
    }
  }
  @media only screen and (max-width: 480px),

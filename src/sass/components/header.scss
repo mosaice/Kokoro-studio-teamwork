@@ -4,11 +4,14 @@
     line-height: 90px;
     font-size: 30px;
     background: #fff;
+    position: relative;
+    border-bottom: 1px solid $border-color;
     .left {
       width: 30px;
       height: 40px;
-      margin-top:20px;
-      margin-left: 20px;
+      top:20px;
+      left: 20px;
+      position: absolute;
     }
   }
 

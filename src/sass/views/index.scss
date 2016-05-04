@@ -4,6 +4,8 @@
 @import "./thank-feedback"; //感谢反馈 -editor = libang
 @import "./personal-center/index"; //个人中心 -editor = libang
 @import "./personal-info/index"; //个人资料 -editor = libang
+@import "./wedding-product/index"; //婚礼套餐 -editor = libang
+@import "./store-classify/index"; //商店分类 -editor = libang
 
 
 // 首页样式 - Momo
@@ -12,5 +14,9 @@
 // 收货样式 - Momo
 @import "./orders/index";
 
+
 @import "./hotel-list";//酒店列表 - xiaowei
 @import "./hotel-show";//酒店详情 - xiaowei
+// 套装样式 - Momo
+@import "./wedding-suit/index";
+

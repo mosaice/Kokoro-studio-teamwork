@@ -1,0 +1,34 @@
+// 各种icon制作 - Momo
+.icon-round-40{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+.mo-red{
+  background-color: #ff0000;
+}
+.mo-bule{
+  background-color: #2f72fb;
+}
+.mo-h{
+  background-color: #f76a25;
+}
+
+// <div class="list-text-icon">
+//   <i class="icon-round-40 white-text mo-red offset-15">减</i>
+//   <i class="icon-round-40 white-text mo-bule offset-15">巢</i>
+//   <i class="icon-round-40 white-text mo-h offset-15">礼</i>
+// </div>
+//
+
+.icon-square-35{
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 7px;
+}

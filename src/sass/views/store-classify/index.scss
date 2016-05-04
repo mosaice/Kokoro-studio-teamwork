@@ -1,0 +1,43 @@
+// 婚纱店分类－libang
+
+.store-classify-page {
+  background: $background-color;
+  .search-input {
+    width: 585px;
+    height: 55px;
+    background: $background-color;
+    border-bottom: none;
+    border-radius: 5px;
+    font-size: $l-fontSize;
+    padding: 0 20px;
+  }
+  li {
+    padding: 0 30px;
+  }
+  .front {
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -22.5px;
+  }
+  .back-header {
+    margin-bottom: 15px;
+  }
+  .row {
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .row .left, .row .right {
+    width: 315px;
+    height: 85px;
+    background: $background-color;
+  }
+  .row a {
+    color: #ababab;
+  }
+
+}

@@ -7,10 +7,13 @@
     }
     li {
       height: 100px;
-      line-height: 100px;
       font-size: 24px;
       border-bottom: 1px solid $border-color;
       position: relative;
+      p {
+        height: 100px;
+        line-height: 100px;
+      }
       &:last-child {
         border-bottom: none;
       }
@@ -20,8 +23,9 @@
       height: 100px;
       line-height: 1em;
       p {
+        height: 1rem;
+        line-height: 0.5rem;
         &:first-child {
-          margin-bottom: 15px;
         }
       }
     }
