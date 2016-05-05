@@ -23,5 +23,7 @@ $(function () {
     $('#dropdown1 a').removeClass('active');
     $(this).addClass('active');
     $('.feedbackinfo > img').fadeOut(300);
+
   })
+
 })
