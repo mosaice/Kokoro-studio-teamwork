@@ -1,111 +1,199 @@
-      // 婚礼套餐详情 - lq
-      .wedding-package {
-        background-color: $background-color;
+// 婚礼套餐详情 - lq
+.wedding-package {
+  background-color: $background-color;
+}
+
+//轮播图
+.slider .indicators .indicator-item.active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.slider-box {
+  position: relative;
+  max-height: 530px;
+  .indicators {
+    z-index: 10;
+    padding-bottom: 20px;
+    .indicator-item {
+      width: 15px;
+      height: 15px;
+      margin: 0 5px;
+      opacity: 0.5;
+    }
+  }
+}
+
+.icon-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: 100%;
+  height: 60px;
+  li {
+    display: inline-block;
+    float: right;
+    padding: 20px;
+    a {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+    }
+    .w-back {
+      background: url(../assets/images/icon/w-back.png) no-repeat center center;
+      background-size: 42px 42px;
+    }
+    .w-star {
+      background: url(../assets/images/icon/w-star.png) no-repeat center center;
+      background-size: 42px 42px;
+    }
+    .w-share {
+      background: url(../assets/images/icon/w-share.png) no-repeat center center;
+      background-size: 42px 42px;
+    }
+  }
+  li:nth-of-type(1) {
+    float: left;
+  }
+}
+
+.redradius {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f00;
+}
+
+.package-info {
+  background-color: #fff;
+  padding-top: 10px;
+  p {
+    padding-left: 20px;
+    line-height: 1.4;
+  }
+  .fz28 {
+    font-size: 28px;
+  }
+  .fz18 {
+    font-size: 18px;
+  }
+}
+
+.price {
+  margin-top: 20px;
+  height: 75px;
+  background-color: $border-color;
+  ul {
+    margin-left: 10px;
+    li {
+      float: left;
+      margin-top: 8px;
+      padding-left: 10px;
+      width: 33%;
+      height: 60px;
+      box-sizing: border-box;
+      line-height: 60px;
+      font-size: 26px;
+      white-space: nowrap;
+      span {
+        color: #f00;
       }
-      
-      .slider .indicators .indicator-item.active {
-        background-color: #fff;
-        opacity: 1;
-      }
-      
-      .slider-box {
-        position: relative;
-        max-height: 530px;
-        .indicators {
-          z-index: 10;
-          padding-bottom: 20px;
-          .indicator-item {
-            width: 15px;
-            height: 15px;
-            margin: 0 5px;
-            opacity: 0.5;
-          }
-        }
-      }
-      
-      .icon-list {
+    }
+    li:nth-of-type(1) {
+      padding-left: 40px;
+    }
+    li:nth-of-type(2) {
+      width: 34%;
+      border-left: 2px solid #ababab;
+      border-right: 2px solid #ababab;
+      text-decoration: line-through;
+    }
+  }
+}
+
+//广告
+.ad {
+  margin: 15px 0;
+  width: 100%;
+  height: 110px;
+  background: url(../assets/images/advertising/advertising02.jpg) no-repeat center center;
+  background-size: 100%;
+}
+
+//套餐介绍
+.package-introduce {
+  background-color: #fff;
+  .fz30 {
+    padding: 25px 0;
+    border-bottom: 1px solid $border-color;
+    font-size: 30px;
+    color: #f60;
+    text-align: center;
+  }
+  .content {
+    padding: 15px 20px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .imgbox {
+    padding: 15px 0;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+//底部菜单
+.footerbar {
+  width: 100%;
+  height: 95px;
+  background-color: $background-color;
+  li {
+    float: left;
+    width: 170px;
+    border-right: 1px solid $border-color;
+    ;
+    box-sizing: border-box;
+    a {
+      float: left;
+      width: 100%;
+      height: 95px;
+    }
+    .msg {
+      background: url(../assets/images/icon/msg.png) no-repeat center center;
+      background-size: 70px;
+    }
+    .call {
+      background: url(../assets/images/icon/call.png) no-repeat center center;
+      background-size: 70px;
+    }
+    .shopcar {
+      position: relative;
+      background: url(../assets/images/icon/shopcar.png) no-repeat center center;
+      background-size: 70px;
+      .shopnum {
         position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 11;
-        width: 100%;
-        height: 60px;
-        li {
-          display: inline-block;
-          float: right;
-          padding: 20px;
-          a {
-            display: inline-block;
-            width: 42px;
-            height: 42px;
-          }
-          .w-back {
-            background: url(../assets/images/icon/w-back.png) no-repeat center center;
-            background-size: 42px 42px;
-          }
-          .w-star {
-            background: url(../assets/images/icon/w-star.png) no-repeat center center;
-            background-size: 42px 42px;
-          }
-          .w-share {
-            background: url(../assets/images/icon/w-share.png) no-repeat center center;
-            background-size: 42px 42px;
-          }
-        }
-        li:nth-of-type(1) {
-          float: left;
-        }
+        top: -15px;
+        left: 108px;
+        padding-top: 6px;
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
       }
-      
-      .redradius {
-        position: absolute;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        background-color: #f00;
-      }
-      
-      .package-info {
-        background-color: #fff;
-        padding-top: 10px;
-        p {
-          padding-left: 20px;
-          line-height: 1.4;
-        }
-        .fz28 {
-          font-size: 28px;
-        }
-        .fz18 {
-          font-size: 18px;
-        }
-      }
-      
-      .price {
-        margin-top: 20px;
-        height: 75px;
-        background-color: $border-color;
-        ul {
-          margin-left: 10px;
-          li {
-            float: left;
-            margin-top: 8px;
-            padding-left: 10px;
-            width: 243px;
-            height: 60px;
-            line-height: 60px;
-            box-sizing: border-box;
-            font-size: 26px;
-            span {
-              color: #f00;
-            }
-          }
-          li:nth-of-type(1) {
-            padding-left: 40px;
-          }
-          li:nth-of-type(2) {
-            border-left: 2px solid #ababab;
-            border-right: 2px solid #ababab;
-            text-decoration: line-through;
-          }
-        }
-      }
+    }
+  }
+  li:nth-of-type(4) {
+    width: 240px;
+    border-right: none;
+    text-align: center;
+    a {
+      line-height: 95px;
+      font-size: 30px;
+      background-color: #f60;
+      color: #fff;
+    }
+  }
+}
