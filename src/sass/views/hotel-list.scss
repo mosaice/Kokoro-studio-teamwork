@@ -1,64 +1,6 @@
 //婚礼酒店列表  xiaowei
 .hotel-list-page {
-	.nav-area-list {
-		width: 100%;
-		background-color: white;
-		font-size: 26px;
-		font-family: "微软雅黑";
-		z-index: 99;
-		padding-bottom: 100px;
-		.nav-area-list-optional {
-			width: 700px;
-		}
-	}
-	.wedding-suit-nav1 {
-		flex-direction: column;
-		.nav-list {
-			display: flex;
-			li {
-				position: relative;
-				width: 750px;
-				height: 60px;
-				line-height: 60px;
-				border-bottom: 1px solid #f2f2f2;
-				p {
-					height: 40px;
-					line-height: 40px;
-					text-align: center;
-					position: absolute;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					margin: auto;
-					border-right: 1px solid #f2f2f2;
-					/*no*/
-					font-size: 26px;
-					color: #565656;
-				}
-				&:last-child p {
-					border: 0;
-				}
-			}
-			.nav-list-optional p {
-				background: url("../assets/images/icon/nav-icon01.png") 122px center no-repeat;
-				background-size: 22px 12px;
-			}
-			.active p {
-				background: url("../assets/images/icon/nav-icon02.png") 122px center no-repeat;
-				background-size: 22px 12px;
-			}
-		}
-	}
-	.bar-img1 {
-		width: 22px;
-		height: 39px;
-		vertical-align: middle;
-		margin-left: 20px;
-	}
-	.search-bg {
-		background-color: #F2F2F2
-	}
+
 	.list-content1 {
 		li {
 			padding: 20px;
@@ -116,60 +58,50 @@
 		float: right;
 		margin: 0 5px;
 	}
-	//二级菜单样式
-	.nav-area-list-optional {
-		width: 750px;
-		&.active {
-			background: url("../assets/images/icon/hook.png") no-repeat;
-			background-size: 30px;
-			background-position: 650px 10px;
-		}
-	}
-	.nav-area-list-optional {
-		color: #434343;
-		padding-left: 65px;
-		&.active {
-			span {
-				color: #FF6500;
-			}
-		}
-	}
+
 	.area-list-img {
 		width: 30px;
 		height: 29px;
 		vertical-align: middle;
 	}
-	.mask {
-		display: none;
-		width: 100%;
-		height: 100%;
-		background: rgba(0, 0, 0, 0.5);
-		position: fixed;
-		top: 190px;
-		left: 0;
-	}
+
 }
+
 // 新增修改 -Momo
-.search-bar .hotel-group {
+.search-bar .hotel-group{
 	padding-left: 80px;
-	input[type=text] {
+	input[type=text]{
 		width: 450px;
 	}
-	.search-btn {
+	.search-btn{
 		width: 65px;
 	}
 }
-.load1 {
-	width: 612px;
-	height: 44px;
-	background-color: #D7D7D7;
-	margin: 0 auto;
-	text-align: center;
-	margin-top: 70px;
-	margin-bottom: 45px;
-}
-.load-text {
-	font-size: 20px;
-	color: #555555;
-	line-height: 44px;
+
+.mask-list{
+	display: none;
+	position: fixed;
+	z-index: 10;
+	top: 191px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 26px;
+	.mask-optional{
+		background-color: #fff;
+		height: 70px;
+		line-height: 70px;
+		padding-left: 53px;
+		border-bottom: 1px solid #f2f2f2;
+		color: #444;
+	}
+	.active{
+		color: #f60;
+		background: #fff url('../assets/images/icon/hook.png') 650px  no-repeat;
+		background-size:30px 30px;
+	}
+	.mask-box{
+		height: 60%;
+		overflow:auto;
+	}
 }
