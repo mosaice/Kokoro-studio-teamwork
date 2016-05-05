@@ -15,6 +15,8 @@
 @mixin web-top () {
   height: 40px;
   background-color: $primary-color;
+  position: relative;
+  z-index: 1003;
 }
 // 清楚浮动 - momo
 @mixin clearfix () {
@@ -64,7 +66,14 @@ html {
   height: 40px;
   background-color: $primary-color;
 }
+
+.overflowY{
+  overflow-y: hidden;
+}
 //自定义偏移量
+.mr-10{
+  margin-right: 10px;
+}
 .mr-15 {
   margin-right: 15px;
 }
@@ -88,6 +97,9 @@ html {
 }
 .ml-20 {
   margin-left: 20px;
+}
+.ml-60{
+  margin-left: 60px;
 }
 .mb-15 {
   margin-bottom: 15px;

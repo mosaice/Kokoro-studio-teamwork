@@ -1,18 +1,19 @@
-
+.hotel-show-page{
+	margin-bottom: 98px;
+}
 .list-text1 {
 	font-size: 22px;
-	padding-bottom: 16px;
-	padding-left: 30px;
+	padding: 16px 0 16px 30px;
 	background: url("../assets/images/icon/arrow-s1.png") no-repeat;
 	background-size: 16px 28px;
 	background-position: 93% 85%;
 	.list-text-title {
 		font-size: 30px;
 		color: #565656;
-		padding-top: 16px;
+		line-height: 1.5em;
 	}
 	p {
-		padding-top: 14px;
+		line-height: 1.5em;
 	}
 	.list-text-price {
 		font-size: 22px;
@@ -35,7 +36,6 @@
 		margin-top: -30px;
 	}
 }
-
 .icon-round {
 	display: inline-block;
 	width: 60px;
@@ -54,9 +54,11 @@
 		line-height: 100px;
 		font-size: 24px;
 		color: #777777;
-		font-family: "微软雅黑"
+		font-family: "微软雅黑";
+		border-bottom: 0.025rem solid #E1E1E1;
+			
 	}
-}	
+}
 .banquet-title {
 	text-align: center;
 	height: 100px;
@@ -66,19 +68,18 @@
 		line-height: 100px;
 		border-bottom: 1px solid #e1e1e1;
 		font-size: 30px;
+		
 	}
-
 }
 .wedding-menu {
 	.list-meal {
+		font-size: 26px;
 		height: 80px;
 		line-height: 80px;
 		padding: 0;
 		color: #555555;
 		border-bottom: 1px solid #E1E1E1;
-		&:last-child {
-			border: 0;
-		}
+		
 		background: url("../assets/images/icon/arrow-s1.png") no-repeat;
 		background-size: 16px 28px;
 		background-position: 98% 50%;
@@ -87,14 +88,19 @@
 			float: right;
 			margin-right: 50px;
 		}
+		
 	}
+	.pad-left {
+			padding-left: 25px;
+		}
 }
 .business-introduction {
-	height: 440px;
+	min-height:  440px;
 	background: url("../assets/images/icon/arrow-s.png") no-repeat;
 	background-size: 39px 22px;
 	background-position: 50% 85%;
 	.hotel-introduce-box {
+		padding-top: 15px;
 		width: 650px;
 		margin: 0 auto;
 	}
@@ -102,15 +108,19 @@
 		text-align: center;
 	}
 	.hotel-introduce {
-		line-height: 32px;
+		line-height:2em;
 		font-size: 24px;
 		color: #939393;
-		padding-top: 25px;
+		
 	}
 }
 .bottom-info {
 	height: 98px;
 	background-color: #F2F2F2;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 	.bottom-info-box {
 		text-align: center;
 		li {
@@ -147,26 +157,30 @@
 	}
 }
 .wedding-menu-mask {
+	
 	position: fixed;
 	height: 1000px;
 	width: 750px;
-	background: red;
 	display: none;
-	.mask{
+	z-index: 999;
+	.mask {
 		position: fixed;
 		width: 100%;
 		height: 100%;
 		top: 0;
-		background: rgba(0,0,0,0.5);
+		background: rgba(0, 0, 0, 0.5);
 		z-index: 5;
 	}
 	.menu-box {
 		width: 687px;
-	    position: fixed;
-		top:0;
+		height: 27.825rem;
+		position: fixed;
+		top: 0;
 		right: 0;
 		background: #fff;
 		z-index: 999999;
+		overflow: auto;
+		padding-bottom: 50px;
 		.menu-list {
 			color: #777777;
 			font-size: 26px;
@@ -179,10 +193,11 @@
 				border-bottom: 1px solid #e1e1e1;
 			}
 			.menu-info {
-				line-height: 40px;
-				padding-top: 20px;
-				padding-left: 20px;
-				padding-bottom: 50px;
+				line-height: 1.7em;
+			    padding-top: 5px;
+				padding-left: 30px;
+				padding-bottom: 30px;
+				font-size:26px;
 			}
 		}
 	}
@@ -190,17 +205,26 @@
 .inf-box {
 	border-bottom: 0.4rem solid #f2f2f2;
 }
-
-.list-font-color{
-	color:#444444;
+.list-font-color {
+	color: #444444;
 	font-size: 26px;
-	span{
+	span {
 		color: #FF6500;
 	}
 }
-.list-text{
-	p{
-		height: 80px;
-		line-height: 80px;
+.list-text {
+	p {
+		height: 50px;
+		line-height: 50px;
 	}
+}
+
+.hotel-slider-box{
+	
+	height: 530px;
+	max-height: 530px;	
+}
+
+.overflowY{
+	overflow-y: hidden;
 }

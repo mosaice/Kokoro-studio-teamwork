@@ -1,0 +1,117 @@
+// 婚礼套餐详情 - lq
+//轮播图
+@import "./wedding-package"; //婚礼 -editor = lq
+.slider .indicators .indicator-item.active {
+  background-color: #f60;
+}
+
+.wedding-emcee {
+  background-color: $background-color;
+}
+
+.slider-box {
+  max-height: 750px;
+}
+
+.mc-info {
+  padding: 10px 20px;
+  background-color: #fff;
+  p {
+    line-height: 1.7;
+    font-size: 26px;
+    &:nth-of-type(2) {
+      color: #f00;
+    }
+    &:nth-of-type(3) {
+      color: #787878;
+    }
+    &:nth-of-type(4) {
+      color: #949494;
+    }
+  }
+}
+
+.serverinfo {
+  margin: 15px 0;
+  background-color: #fff;
+  .servermain {
+    padding: 20px 20px 10px;
+    p {
+      font-size: 26px;
+      line-height: 1.7;
+      color: #444;
+    }
+  }
+}
+
+.mc-about {
+  .aboutmain {
+    padding: 0 50px 20px;
+    p {
+      font-size: 24px;
+      line-height: 2;
+      color: #949494;
+      &:nth-of-type(1) {
+        padding-top: 12px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.example {
+  background-color: #fff;
+  padding-bottom: 10px;
+  .photo {
+    padding-top: 20px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #f60;
+    span {
+      display: inline-block;
+      width: 224px;
+      background-color: #fff;
+    }
+  }
+  .imgbox {
+    padding: 40px 20px 0;
+    border-top: 2px solid $border-color;
+    img {
+      width: 100%;
+    }
+  }
+  .emcee {
+    margin: 0 20px;
+    padding: 10px 20px;
+    background-color: $background-color;
+    p {
+      line-height: 1.4;
+    }
+    p:nth-of-type(1) {
+      font-size: 26px;
+      color: #565656;
+    }
+    p:nth-of-type(2) {
+      font-size: 22px;
+      color: #949494;
+    }
+  }
+}
+
+.footerbar {
+  li {
+    border: none;
+  }
+  li:nth-of-type(1) {
+    border-right: 1px solid $border-color;
+  }
+  li:nth-of-type(3) {
+    a {
+      background-color: #72cfc7;
+    }
+  }
+  .footer-btn {
+    width: 205px;
+  }
+}
