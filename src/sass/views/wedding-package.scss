@@ -32,7 +32,6 @@
   width: 100%;
   height: 60px;
   li {
-    display: inline-block;
     float: right;
     padding: 20px;
     a {
@@ -72,12 +71,12 @@
   p {
     padding-left: 20px;
     line-height: 1.4;
-  }
-  .fz28 {
-    font-size: 28px;
-  }
-  .fz18 {
-    font-size: 18px;
+    &:nth-of-type(2n-1) {
+      font-size: 28px;
+    }
+    &:nth-of-type(2n) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -175,7 +174,6 @@
       background: url(../assets/images/icon/shopcar.png) no-repeat center center;
       background-size: 70px;
       .shopnum {
-        position: absolute;
         top: -15px;
         left: 108px;
         padding-top: 6px;
@@ -185,7 +183,7 @@
       }
     }
   }
-  li:nth-of-type(4) {
+  .footer-btn {
     width: 240px;
     border-right: none;
     text-align: center;
