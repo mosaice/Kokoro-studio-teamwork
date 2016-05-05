@@ -1,5 +1,6 @@
 // 婚礼套餐详情 - lq
 .wedding-package {
+  margin-bottom: 95px;
   background-color: $background-color;
 }
 
@@ -147,6 +148,9 @@
 
 //底部菜单
 .footerbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 95px;
   background-color: $background-color;
