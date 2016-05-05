@@ -66,6 +66,10 @@ html {
   height: 40px;
   background-color: $primary-color;
 }
+
+.overflowY{
+  overflow-y: hidden;
+}
 //自定义偏移量
 .mr-10{
   margin-right: 10px;
@@ -93,6 +97,9 @@ html {
 }
 .ml-20 {
   margin-left: 20px;
+}
+.ml-60{
+  margin-left: 60px;
 }
 .mb-15 {
   margin-bottom: 15px;
