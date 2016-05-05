@@ -1,36 +1,39 @@
 $(function() {
   var $nav = $('#nav-click');
-  var $navChild = $('.nav-list-optional');
   var $ListSwitch = $('#list-switch');
   var $SwitchNav = $('#switch-list');
-  var $ClickRegion = $('#click-region');
-  var $Region = $('.mask');
+  var $Region = $('#click-region');
+  var $MaskClick = $('#mask-list');
 
-  NavClick($nav, $navChild, $ClickRegion);
+  NavClick($nav, $Region, $MaskClick);
   ClickSwitch($ListSwitch, $SwitchNav);
 
   $(".button-collapse").sideNav();
 })
 
-function NavClick(parent, child, Region) {
-  parent.find(child).click(function() {
+function NavClick(parent, Region, Mask) {
+  parent.find('.nav-list-optional').click(function() {
     var $Self = $(this),
       $Child = $(this).find('i');
-    parent.find(child).removeClass('active');
+    parent.find('.nav-list-optional').removeClass('active');
     $Self.addClass('active');
-    if(Region.parent(parent).hasClass('active')){
-      $('body').addClass('overflowY');
-      Region.siblings('.mask').css({
+    if(parent.find('.nav-list-optional').eq(0).hasClass('active')){
+      Mask.css({
         display:'block'
-      });
+      })
+      $('body').addClass('overflowY');
     }else{
-      $('body').removeClass('overflowY');
-      parent.find('.mask').css({
+      Mask.css({
         display:'none'
       })
+      $('body').removeClass('overflowY');
     }
   });
 
+  Mask.find('p').click(function(event) {
+    Mask.find('p').removeClass('active');
+    $(this).addClass('active');
+  });
 }
 
 function ClickSwitch(element, childelement) {
