@@ -4,11 +4,22 @@
   .only-image-list {
     li {
       padding: 20px;
-      margin-bottom: 15px;
       background: #fff;
+      position: relative;
       &:last-child {
         margin-bottom: 0;
       }
     }
+  }
+  .image-title {
+    height: 45px;
+    background: rgba(0,0,0,0.3);
+    color:#fff;
+    position: absolute;
+    left:20px;
+    width: calc(100% - 40px);
+    bottom: 20px;
+    font-size: $l-fontSize;
+    line-height: 45px;
   }
 }
