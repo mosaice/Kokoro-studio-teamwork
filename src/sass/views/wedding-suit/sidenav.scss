@@ -25,6 +25,7 @@
   //   颜色
   // </div>
 
+
   .nav-screening{
     dd{
       width: 30%;
@@ -123,8 +124,10 @@
     font-size: 30px;
   }
   .btn-submit{
-    padding: 20px 64px;
-    height: auto;
+    height: 67px;
+    line-height: 67px;
+    padding-left: 64px;
+    padding-right: 64px;
     box-shadow:none;
     border-radius: 10px;
     background-color: $primary-color;
