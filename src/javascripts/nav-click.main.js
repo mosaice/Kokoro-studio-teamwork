@@ -17,14 +17,14 @@ function NavClick(parent, Region, Mask) {
       $Child = $(this).find('i');
     parent.find('.nav-list-optional').removeClass('active');
     $Self.addClass('active');
-    if(parent.find('.nav-list-optional').eq(0).hasClass('active')){
+    if (parent.find('.nav-list-optional').eq(0).hasClass('active')) {
       Mask.css({
-        display:'block'
+        display: 'block'
       })
       $('body').addClass('overflowY');
-    }else{
+    } else {
       Mask.css({
-        display:'none'
+        display: 'none'
       })
       $('body').removeClass('overflowY');
     }
@@ -33,6 +33,11 @@ function NavClick(parent, Region, Mask) {
   Mask.find('p').click(function(event) {
     Mask.find('p').removeClass('active');
     $(this).addClass('active');
+  });
+
+  Mask.click(function(event) {
+    $('body').removeClass('overflowY');
+    $(this).css('display', 'none');
   });
 }
 
