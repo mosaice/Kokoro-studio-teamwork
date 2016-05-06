@@ -22,12 +22,19 @@ function mask() {
 
   });
   $('#addshop').click(function () {
+    $('.order').fadeOut(300);
     $('.emceebar').fadeOut(300);
     $('.emcee-add').fadeIn(300);
-
+  });
+  $('#submit-order').click(function () {
+    $('.paymode').fadeIn(300);
   });
   $('.emcee-offer a').click(function () {
     $('.emcee-offer a').removeClass('active');
+    $(this).addClass('active');
+  });
+  $('.paymode a').click(function () {
+    $('.paymode a').removeClass('active');
     $(this).addClass('active');
   });
 
