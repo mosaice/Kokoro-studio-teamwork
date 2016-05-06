@@ -13,7 +13,22 @@ function BannerSwitch(el) { // banner图切换
 }
 
 function mask() {
+  $('.footer-btn').click(function () {
+    $('.mask').fadeIn(300);
+    $('body').css('overflow-y', 'hidden')
+  });
   $('#freeorder').click(function () {
-    $('.mask,.order').fadeIn(300);
-  })
+    $('.order').fadeIn(300);
+
+  });
+  $('#addshop').click(function () {
+    $('.emceebar').fadeOut(300);
+    $('.emcee-add').fadeIn(300);
+
+  });
+  $('.emcee-offer a').click(function () {
+    $('.emcee-offer a').removeClass('active');
+    $(this).addClass('active');
+  });
+
 }

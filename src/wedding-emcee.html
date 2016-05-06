@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="static/assets/css/materialize.min.css" charset="utf-8">
   <link rel="stylesheet" href="static/assets/css/responsive.css" charset="utf-8">
+  <link rel="stylesheet" href="static/assets/css/bootstrap-datetimepicker.min.css" charset="utf-8">
   <link rel="stylesheet" href="static/css/index.main.debug.css" charset="utf-8">
 </head>
 
@@ -73,33 +74,33 @@
         <p>为你打造属于你自己的婚礼......</p>
         <p>司仪主持：高神</p>
       </div>
-
-
     </div>
-    <div class="mask"></div>
-    <div class="order">
-      <p>预约：立俊</p>
-      <div> 手机：
-        <input type="text">
-        <br> 档期：
-        <input type="text" placeholder="04 / 26 / 2016" disabled>
-        <a href="" class="calendar"></a>
-      </div>
-      <a href="" class="submit-btn">提交</a>
+    <div class="mask">
+      <div class="order">
+        <p>预约：立俊</p>
+        <div id="calendar"> 手机：
+          <input type="text">
+          <br> 档期：
+          <input type="date" class="form-control datepicker">
+          <a href="#calendar" class="calendar"></a>
+        </div>
+        <a href="" class="submit-btn">提交</a>
 
-    </div>
-    <div class="emcee-add">
-      <div class="emcee-photo">
-        <p>立俊2016主持报价</p>
-        <p><span>￥7,800</span></p>
       </div>
-      <div class="emcee-offer">
-        <p class="active">立俊2016主持报价<span>￥7,800</span></p>
-        <p>立俊2016主持报价<span>￥7,800</span></p>
-        <p>立俊2016主持报价<span>￥7,800</span></p>
+      <div class="emcee-add">
+        <div class="emcee-photo">
+          <p>立俊2016主持报价</p>
+          <p><span>￥7,800</span></p>
+        </div>
+        <div class="emcee-offer">
+          <a href="#" class="active">立俊2016主持报价<span>￥7,800</span></a>
+          <a href="#">立俊2016主持报价<span>￥7,800</span></a>
+          <a href="#">立俊2016主持报价<span>￥7,800</span></a>
+        </div>
+        <div class="emcee-sure"><a href="">确定</a></div>
       </div>
-      <div class="emcee-sure"><a href="">确定</a></div>
     </div>
+
   </div>
   <div class="footerbar emceebar">
     <ul>
@@ -110,17 +111,16 @@
         <a href="" class="call"></a>
       </li>
       <li class="footer-btn">
-        <a href="#" id="freeorder">免费预约</a>
+        <a href="javascript:void(0)" id="freeorder">免费预约</a>
       </li>
       <li class="footer-btn">
-        <a href="">加入购物车</a>
+        <a href="javascript:void(0)" id="addshop">加入购物车</a>
       </li>
     </ul>
   </div>
-
-
   <script type="text/javascript" src="static/assets/javascripts/jquery.min.js"></script>
   <script type="text/javascript" src="static/assets/javascripts/materialize.min.js"></script>
+  <script type="text/javascript" src="static/assets/javascripts/bootstrap-datetimepicker.min.js"></script>
   <script src="static/javascripts/home.main.js" charset="utf-8"></script>
 </body>
 
