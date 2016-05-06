@@ -9,10 +9,11 @@
   position: relative;
   margin-bottom: 95px;
   background-color: $background-color;
-}
-
-.slider-box {
-  max-height: 750px;
+  .slider-box,
+  .slider {
+    max-height: 750px;
+    height: 750px;
+  }
 }
 
 .mc-info {
