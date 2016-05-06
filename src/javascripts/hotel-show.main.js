@@ -15,30 +15,14 @@
 
 
 $(function () {
-	
+
   $('.list-meal1 a').click(function () {
-<<<<<<< HEAD
-	  console.log('111');
-=======
->>>>>>> b223e8a3fa33e937e0685cba225526e8191e47a0
     $('.wedding-menu-mask').fadeIn(300);
-	$('body').addClass('overflowY');
+    $('body').addClass('overflowY');
   })
-  $('.wedding-menu-mask').click(function(){
-	  $('.wedding-menu-mask').fadeOut(300);
-	  $('body').removeClass('overflowY');
+  $('.wedding-menu-mask').click(function () {
+    $('.wedding-menu-mask').fadeOut(300);
+    $('body').removeClass('overflowY');
   })
-  
- }) 
-<<<<<<< HEAD
-/**
- * 作者: zhangweinan
- * 作用: 婚宴酒店信息展示
- * 创建日期: 2016-05-04
- * 修改日期: 2016-05-04
- */
 
-=======
->>>>>>> b223e8a3fa33e937e0685cba225526e8191e47a0
-
-  
+})
