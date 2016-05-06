@@ -6,8 +6,7 @@
   <title>竞嫁网</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="static/assets/css/materialize.min.css" charset="utf-8">
-  <link rel="stylesheet" href="static/assets/css/responsive.css" charset="utf-8">
-
+  <link rel="stylesheet" href="static/assets/css/bootstrap-datetimepicker.min.css" charset="utf-8">
   <link rel="stylesheet" href="static/css/index.main.debug.css" charset="utf-8">
 </head>
 
@@ -49,6 +48,7 @@
       <p>￥7800&nbsp;&nbsp;起</p>
       <p>工作时间：预约制</p>
       <p>地址：竞嫁总部（上海虹口花园路128号7街区3001室）</p>
+      <input type="date" class="datepicker">
     </div>
     <div class="serverinfo package-introduce">
       <p class="fz30">服务详情</p>
@@ -120,8 +120,13 @@
   </div>
   <script type="text/javascript" src="static/assets/javascripts/jquery.min.js"></script>
   <script type="text/javascript" src="static/assets/javascripts/materialize.min.js"></script>
-
   <script src="static/javascripts/home.main.js" charset="utf-8"></script>
+  <script>
+    $('.datepicker').pickadate({
+      selectMonths: true, // Creates a dropdown to control month
+      selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+  </script>
 </body>
 
 </html>

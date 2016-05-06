@@ -14,6 +14,18 @@
     max-height: 750px;
     height: 750px;
   }
+  .picker__footer {
+    button {
+      font-size: $l-fontSize;
+    }
+  }
+  .picker__calendar-container {
+    font-size: $l-fontSize!important;
+  }
+  .picker__frame {
+    width: 90vw;
+    top: 3%;
+  }
 }
 
 .mc-info {

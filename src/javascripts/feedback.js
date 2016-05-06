@@ -16,13 +16,18 @@
 $(function () {
   $('.dropdown-select').click(function () {
     $('.feedbackinfo > img').fadeIn(300);
-	
-  })
+  });
   $('#dropdown1 a').click(function () {
     var html = $(this).html();
     $('.dropdown-select').html(html);
     $('#dropdown1 a').removeClass('active');
     $(this).addClass('active');
     $('.feedbackinfo > img').fadeOut(300);
-  })
-})
+  });
+  $('body').on('click', function(e) {
+    e.preventDefault();
+    if (!$('#dropdown1').hasClass('active')) {
+      $('.feedbackinfo > img').fadeOut(300);
+    }
+  });
+});

@@ -19,7 +19,6 @@ function mask() {
   });
   $('#freeorder').click(function () {
     $('.order').fadeIn(300);
-
   });
   $('#addshop').click(function () {
     $('.order').fadeOut(300);
