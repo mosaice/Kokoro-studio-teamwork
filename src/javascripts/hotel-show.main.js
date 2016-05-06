@@ -17,7 +17,6 @@
 $(function () {
 	
   $('.list-meal1 a').click(function () {
-	  console.log('111');
     $('.wedding-menu-mask').fadeIn(300);
 	$('body').addClass('overflowY');
   })
@@ -27,12 +26,5 @@ $(function () {
   })
   
  }) 
-/**
- * 作者: zhangweinan
- * 作用: 婚宴酒店信息展示
- * 创建日期: 2016-05-04
- * 修改日期: 2016-05-04
- */
-
 
   
