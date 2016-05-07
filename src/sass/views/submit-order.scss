@@ -21,6 +21,9 @@
     font-size: 26px;
     text-indent: 20px;
   }
+  span {
+    margin: 14px 32px;
+  }
 }
 
 .order-list {
@@ -30,6 +33,7 @@
     border-bottom: 2px solid $border-color;
     img {
       float: left;
+      margin-top: 10px;
       width: 118px;
       height: 120px;
       border: 1px solid #393939;
@@ -41,7 +45,7 @@
 }
 
 .order-item {
-  min-height: 122px;
+  min-height: 142px;
   padding-left: 140px;
   .item-title {
     padding-top: 10px;
@@ -51,7 +55,7 @@
     color: #444
   }
   .item-info {
-    margin-bottom: 4px;
+    margin: 10px 0;
     height: 20px;
     font-size: 20px;
     color: #ababab;

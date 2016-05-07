@@ -14,18 +14,6 @@
     max-height: 750px;
     height: 750px;
   }
-  .picker__footer {
-    button {
-      font-size: $l-fontSize;
-    }
-  }
-  .picker__calendar-container {
-    font-size: $l-fontSize!important;
-  }
-  .picker__frame {
-    width: 90vw;
-    top: 3%;
-  }
 }
 
 .mc-info {
@@ -144,7 +132,7 @@
 }
 
 .order {
-  display: none;
+  //  display: none;
   position: absolute;
   left: 92px;
   bottom: 290px;
@@ -161,7 +149,7 @@
     border-bottom: 2px solid $border-color;
     text-align: center;
   }
-  div {
+  .calendar-page {
     padding-top: 15px;
     padding-left: 26px;
     input,
@@ -175,7 +163,7 @@
         width: 379px;
       }
     }
-    a {
+    .calendar {
       position: absolute;
       margin-left: 20px;
       width: 72px;
@@ -197,6 +185,15 @@
     background-color: $primary-color;
     color: #fff;
   }
+}
+
+.calendar {
+  position: absolute;
+  margin-left: 20px;
+  width: 72px;
+  height: 72px;
+  background: url(../assets/images/icon/calendar.png) no-repeat center center;
+  background-size: 72px;
 }
 
 .emcee-add {
