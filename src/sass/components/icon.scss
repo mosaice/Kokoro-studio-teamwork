@@ -1,5 +1,5 @@
 // 各种icon制作 - Momo
-.icon-round-40{
+.icon-round-40 {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -7,28 +7,70 @@
   text-align: center;
   border-radius: 50%;
 }
-.mo-red{
+.mo-red {
   background-color: #ff0000;
 }
-.mo-bule{
+.mo-bule {
   background-color: #2f72fb;
 }
-.mo-h{
+.mo-h {
   background-color: #f76a25;
 }
-
 // <div class="list-text-icon">
 //   <i class="icon-round-40 white-text mo-red offset-15">减</i>
 //   <i class="icon-round-40 white-text mo-bule offset-15">巢</i>
 //   <i class="icon-round-40 white-text mo-h offset-15">礼</i>
 // </div>
 //
-
-.icon-square-35{
+.icon-square-35 {
   display: inline-block;
   font-size: 22px;
   color: #fff;
   text-align: center;
   border-radius: 5px;
   padding: 7px;
+}
+// <div class="wedding-icon">
+//   <p><i class="icon-square-35 mo-red">减</i><span>选竞嫁，结婚费用分期付</span></p>
+//   <p><i class="icon-square-35 mo-h">礼</i><span>新人注册，即享7000元贴心豪礼</span></p>
+// </div>
+.icon-white-back {
+  display: block;
+  width: 22px;
+  height: 39px;
+  background: url("../assets/images/icon/white-back.png") 0 0 no-repeat;
+  background-size: 22px 39px;
+}
+// <a class="icon-white-back" href=""></a>
+.icon-shopping-cart {
+  width: 40px;
+  height: 38px;
+  background: url("../assets/images/icon/shopping-cart.png") 0 0 no-repeat;
+  background-size: 40px 38px;
+}
+.icon-home {
+  width: 50px;
+  height: 50px;
+  background: url("../assets/images/icon/home.png") 0 0 no-repeat;
+  background-size: 50px 50px;
+}
+// <a href="" class="icon-home"></a>
+.icon-switch {
+  width: 48px;
+  height: 40px;
+  background: url("../assets/images/icon/switch.png") 0 0 no-repeat;
+  background-size: 40px 40px;
+}
+// <i class="icon-switch"></i>
+.icon-back-l{
+  width: 22px;
+  height: 39px;
+  background:  #fff url("../assets/images/icon/back-l.png") 0 0 no-repeat;
+  background-size: 22px 39px;
+}
+.icon-back-r{
+  width: 22px;
+  height: 39px;
+  background:  #fff url("../assets/images/icon/back-r.png") 0 0 no-repeat;
+  background-size: 22px 39px;
 }
