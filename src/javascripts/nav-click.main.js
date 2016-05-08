@@ -4,16 +4,15 @@ $(function () {
   var $SwitchNav = $('#switch-list');
   var $Region = $('#click-region');
   var $MaskClick = $('#mask-list');
-  var $Mask1Click = $('#mask-list1');
-  var $Mask2Click = $('#mask-list2');
+  
 
-  NavClick($nav, $Region, $MaskClick, $Mask1Click, $Mask2Click);
+  NavClick($nav, $Region, $MaskClick);
   ClickSwitch($ListSwitch, $SwitchNav);
   $(".button-collapse").sideNav();
 })
 
-function NavClick(parent, Region, Mask, Mask1, Mask2) {
-  //司仪列表
+function NavClick(parent, Region, Mask) {
+
   parent.find('.nav-list-optional').click(function () {
     var $Self = $(this)
       , $Child = $(this).find('i');
@@ -23,12 +22,12 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
       Mask.css({
         display: 'block'
       })
-      $('body').addClass('overflowY1');
+      $('body').addClass('overflowY');
     } else {
       Mask.css({
         display: 'none'
       })
-      $('body').removeClass('overflowY1');
+      $('body').removeClass('overflowY');
     }
   });
   Mask.find('p').click(function (event) {
@@ -36,61 +35,10 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
     $(this).addClass('active');
   });
   Mask.click(function (event) {
-    $('body').removeClass('overflowY1');
-    $(this).css('display', 'none');
-  });
-  //全城列表
-  parent.find('.nav-list-optional').click(function () {
-    var $Self = $(this)
-      , $Child = $(this).find('i');
-    parent.find('.nav-list-optional').removeClass('active');
-    $Self.addClass('active');
-    if (parent.find('.nav-list-optional').eq(1).hasClass('active')) {
-      Mask1.css({
-        display: 'block'
-      })
-      $('body').addClass('overflowY2');
-    } else {
-      Mask1.css({
-        display: 'none'
-      })
-      $('body').removeClass('overflowY2');
-    }
-  });
-  Mask1.find('p').click(function (event) {
-    Mask1.find('p').removeClass('active');
-    $(this).addClass('active');
-  });
-  Mask1.click(function (event) {
-    $('body').removeClass('overflowY2');
-    $(this).css('display', 'none');
-  });
-  //智能排序
-  parent.find('.nav-list-optional').click(function () {
-    var $Self = $(this)
-      , $Child = $(this).find('i');
-    parent.find('.nav-list-optional').removeClass('active');
-    $Self.addClass('active');
-    if (parent.find('.nav-list-optional').eq(2).hasClass('active')) {
-      Mask2.css({
-        display: 'block'
-      })
-      $('body').addClass('overflowY');
-    } else {
-      Mask2.css({
-        display: 'none'
-      })
-      $('body').removeClass('overflowY');
-    }
-  });
-  Mask2.find('p').click(function (event) {
-    Mask2.find('p').removeClass('active');
-    $(this).addClass('active');
-  });
-  Mask2.click(function (event) {
     $('body').removeClass('overflowY');
     $(this).css('display', 'none');
   });
+
 }
 
 function ClickSwitch(element, childelement) {
@@ -109,31 +57,3 @@ function ClickSwitch(element, childelement) {
 
 
 
-/**
- * 作者: zhangweinan
- * 作用: 婚礼人、作品跳转按钮
- * 创建日期: 2016-05-06
- * 修改日期: 2016-05-06
- */
-$(function () {
-  $('.wedding-search-btn1').click(function () {
-    $('.wedding-search-btn1').css({
-      'background-color': '#FF6600'
-      , 'color': '#fff'
-    });
-    $('.wedding-search-btn2').css({
-      'background-color': '#FFFFFF'
-      , 'color': '#FF6600'
-    });
-  })
-  $('.wedding-search-btn2').click(function () {
-    $('.wedding-search-btn1').css({
-      'color': '#FF6600'
-      , 'background-color': '#fff'
-    });
-    $('.wedding-search-btn2').css({
-      'color': '#fff'
-      , 'background-color': '#FF6600'
-    });
-  })
-})

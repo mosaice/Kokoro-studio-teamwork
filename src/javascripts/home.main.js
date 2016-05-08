@@ -32,6 +32,15 @@ function mask() {
     $('.emcee-offer a').removeClass('active');
     $(this).addClass('active');
   });
+  $('.details-size li').click(function () {
+    $('.details-size li').removeClass('active');
+    $(this).addClass('active');
+  });
+	  $('.details-color li').click(function () {
+    $('.details-color li').removeClass('active');
+    $(this).addClass('active');
+  });
+
   $('.paymode a').click(function () {
     $('.paymode a').removeClass('active');
     $(this).addClass('active');
