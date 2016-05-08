@@ -3,6 +3,7 @@ $(function () {
   BannerSwitch('.slider');
   mask();
   orderFold();
+  shopcarClear()
 });
 
 function BannerSwitch(el) { // banner图切换
@@ -42,16 +43,50 @@ function mask() {
 
 }
 
-//折叠
+//折叠 --lq
 function orderFold() {
-  var price = $('.item-price');
-  var price_info = $('.order-price-info')
-  $('.clearfix').delegate('.item-price', 'click', function () {
-    var thisOrder = $(this).parent().parent().parent().find('.order-price-info');
+
+  $('.clearfix').delegate('.js_item_price', 'click', function () {
+    var thisOrder = $(this).parent().parent().parent().find('.js_order_price_info');
     if (thisOrder.hasClass('active')) {
       thisOrder.removeClass('active');
     } else {
       thisOrder.addClass('active');
     }
-  })
+  });
+  $('.orders-content').delegate('.js_item_price', 'click', function () {
+    var thisOrder = $(this).parent().parent().parent().parent().find('.js_order_price_info');
+    if (thisOrder.hasClass('active')) {
+      thisOrder.removeClass('active');
+    } else {
+      thisOrder.addClass('active');
+    }
+  });
+}
+
+//购物车结算 --lq
+function shopcarClear() {
+
+  $('.js_numadd').click(function () {
+    var num = parseInt($('#js_edit_num').val());
+    $('#js_edit_num').val(num + 1);
+  });
+  $('.js_numminus').click(function () {
+    var num = parseInt($('#js_edit_num').val());
+    if (num > 0) {
+      $('#js_edit_num').val(num - 1);
+    }
+  });
+  $('.js_edit-delete').click(function () {
+    $('#js_edit_num').val(0);
+  });
+  $('li').delegate('.js_edit_show', 'click', function () {
+    var thisEdit = $(this).parent().parent().find('.edit');
+    $('.mask').show();
+    if (thisEdit.hasClass('active')) {
+      thisEdit.removeClass('active');
+    } else {
+      thisEdit.addClass('active');
+    }
+  });
 }
