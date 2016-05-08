@@ -2,6 +2,7 @@
 $(function () {
   BannerSwitch('.slider');
   mask();
+  orderFold();
 });
 
 function BannerSwitch(el) { // banner图切换
@@ -26,6 +27,8 @@ function mask() {
     $('.emcee-add').fadeIn(300);
   });
   $('#submit-order').click(function () {
+    $('.order-price-info').removeClass('active');
+    $('.order-hotel').show();
     $('.paymode').fadeIn(300);
   });
   $('.emcee-offer a').click(function () {
@@ -37,4 +40,18 @@ function mask() {
     $(this).addClass('active');
   });
 
+}
+
+//折叠
+function orderFold() {
+  var price = $('.item-price');
+  var price_info = $('.order-price-info')
+  $('.clearfix').delegate('.item-price', 'click', function () {
+    var thisOrder = $(this).parent().parent().parent().find('.order-price-info');
+    if (thisOrder.hasClass('active')) {
+      thisOrder.removeClass('active');
+    } else {
+      thisOrder.addClass('active');
+    }
+  })
 }
