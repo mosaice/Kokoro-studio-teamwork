@@ -16,6 +16,7 @@ function NavClick(parent, Region, Mask) {
   parent.find('.nav-list-optional').click(function() {
     var $Self = $(this),
       $Child = $(this).find('i');
+
     parent.find('.nav-list-optional').removeClass('active');
     $Self.addClass('active');
     if (parent.find('.nav-list-optional').eq(0).hasClass('active') && Mask.length != 0) {
@@ -36,6 +37,7 @@ function NavClick(parent, Region, Mask) {
     $(this).addClass('active');
   });
   Mask.click(function(event) {
+
     $('body').removeClass('overflowY');
     $(this).css('display', 'none');
   });
