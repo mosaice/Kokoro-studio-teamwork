@@ -1,0 +1,227 @@
+//婚纱礼服详情 xiaowei
+.bgcolor {
+	background: #F4F4F4;
+}
+
+
+.mc-info p:nth-of-type(1) {
+	color: #434343;
+	font-size: 30px;
+}
+.mc-info p:nth-of-type(2) {
+	color: #ABABAB;
+	font-size: 24px;
+}
+.mc-info p:nth-of-type(3) {
+	color: #FF6500;
+	font-size: 32px;
+	span {
+		color: #ABABAB;
+		font-size: 24px;
+	}
+}
+.slider {
+	height: 750px;
+	.slider-box {
+		height: 750px;
+	}
+}
+.fz26 {
+	color: #777777;
+	font-size: 26px;
+	line-height: 80px;
+	padding-left: 0.5rem;
+	background: url("../assets/images/icon/arrow-s2.png") no-repeat;
+	background-position: 98% 50%;
+	background-size: 22px 39px;
+}
+.server-info {
+	height: 80px;
+	margin: 0.375rem 0;
+}
+.main-img,
+.main-info {
+	float: left;
+}
+.main-img {
+	padding: 30px 20px;
+	img {
+		width: 220px;
+		height: 220px;
+	}
+}
+.main-info {
+	float: left;
+	padding-top: 30px;
+	width: 450px;
+	P {
+		width: 370px;
+		line-height: 1.3em;
+		padding-bottom: 20px;
+	}
+	p:nth-of-type(1) {
+		font-size: 30px;
+		color: #555555;
+	}
+	p:nth-of-type(2) {
+		font-size: 26px;
+		color: #ABABAB;
+	}
+}
+.main-box {
+	height: 280px;
+}
+.main-p {
+	float: left;
+	color: #434343;
+	line-height: 1.5em;
+	.main-p-box {
+		float: left;
+		border: 1px solid #000;
+		border-radius: 5px;
+		font-size: 28px;
+		padding: 20px 45px;
+		margin-right: 25px;
+	}
+}
+.fz26-1 {
+	color: #FF6500;
+	font-size: 26px;
+	line-height: 80px;
+	padding-left: 0.5rem;
+}
+.wedding-details-list {
+	padding-bottom: 100px;
+	.details-list-box {
+		float: left;
+		font-size: 22px;
+		background: #fff;
+		margin: 5px 12px;
+		padding-bottom: 15px;
+		.list-box {
+			width: 342px;
+		}
+		p {
+			padding-left: 8px;
+			color: #434343;
+			width: 290px;
+		}
+		p:nth-of-type(2) {
+			color: #FF0000;
+			padding-top: 40px;
+		}
+		.list-img {
+			text-align: center;
+			width: 342px;
+			img {
+				width: 327px;
+				height: 297px;
+				margin: 8px 0;
+			}
+		}
+		.list-con {
+			background: url("../assets/images/icon/shopcar2.jpg") no-repeat;
+			background-position: 95% 98%;
+			background-size: 40px 38px;
+		}
+	}
+}
+.details-add {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 16;
+	width: 100%;
+	height: 14.925rem;
+	background-color: #fff;
+	margin-bottom: 20px;
+	display: none;
+	.details-sure {
+		height: 2.45rem;
+		line-height: 2.45rem;
+		text-align: center;
+		a {
+			float: left;
+			width: 100%;
+			color: #fff;
+			background-color: #72cfc7;
+		}
+	}
+	.details-offer {
+		background: #F1F1F1;
+		font-size: 30px;
+		color: #555;
+	
+		padding: 20px 0 20px 20px;
+		.details-size-option {
+			float: left;
+			
+			text-align: center;
+			background: #fff;
+			border: 1px solid #949494;
+			height: 58px;
+			width: 127px;
+			
+			
+			margin-right: 10px;
+			margin-top: 25px;
+			a{
+				color: #ABABAB;
+				font-size: 26px;
+				line-height: 58px;
+				
+			}
+		}
+		.details-color-option {
+			float: left;
+			background: #fff;
+			border: 1px solid #949494;
+			height: 54px;
+			width: 329px;
+			text-align: center;
+			margin-right: 10px;
+			margin-top: 25px;
+			a{
+				font-size: 26px;
+				color: #CBCBCB;
+				line-height: 54px;
+			}
+		}
+		.details-sum-option {
+			float: left;
+			color: #CBCBCB;
+			background: #fff;
+			border: 1px solid #949494;
+			
+			
+			text-align: center;
+			
+			margin-right: 10px;
+			margin-top: 25px;
+			input[type=number]{
+				width: 124px;
+				height: 44px;
+				line-height: 44px;
+				border: 0;
+				text-align: right;
+				margin: 0;
+				font-size: 30px;
+			}
+		}
+		
+	}
+	.details-offer .active {
+		border: 0.025rem solid #f00;
+	}
+}
+.boxcenter{
+	margin: 0 auto;
+	width: 732px;
+}
+.details-foot{
+	background: url(../assets/images/icon/shopcar3.png) no-repeat center center;
+    background-size: 56px;
+	
+}
+
+

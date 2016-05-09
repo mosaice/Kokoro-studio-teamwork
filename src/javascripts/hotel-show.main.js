@@ -16,13 +16,42 @@
 
 $(function () {
 
-  $('.list-meal1 a').click(function () {
-    $('.wedding-menu-mask').fadeIn(300);
-    $('body').addClass('overflowY');
-  })
-  $('.wedding-menu-mask').click(function () {
-    $('.wedding-menu-mask').fadeOut(300);
-    $('body').removeClass('overflowY');
-  })
+	$('#meal1').click(function () {
+		$('#mask-list1').fadeIn(300);
+		$('body').addClass('overflowY');
+	})
+	$('#mask-list1').click(function () {
+		$('#mask-list1').fadeOut(300);
+		$('body').removeClass('overflowY');
+	})
+
+	$('#meal2').click(function () {
+		$('#mask-list2').fadeIn(300);
+		$('body').addClass('overflowY');
+	})
+	$('#mask-list2').click(function () {
+		$('#mask-list2').fadeOut(300);
+		$('body').removeClass('overflowY');
+	})
+
+	$('#meal3').click(function () {
+		$('#mask-list3').fadeIn(300);
+		$('body').addClass('overflowY');
+	})
+	$('#mask-list3').click(function () {
+		$('#mask-list3').fadeOut(300);
+		$('body').removeClass('overflowY');
+	})
+	
+	$('#meal4').click(function () {
+		$('#mask-list4').fadeIn(300);
+		$('body').addClass('overflowY');
+	})
+	$('#mask-list4').click(function () {
+		$('#mask-list4').fadeOut(300);
+		$('body').removeClass('overflowY');
+	})
+
+
 
 })
