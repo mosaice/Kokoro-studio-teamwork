@@ -3,7 +3,8 @@ $(function () {
   BannerSwitch('.slider');
   mask();
   orderFold();
-  shopcarClear()
+  shopcarClear();
+  onlyNum()
 });
 
 function BannerSwitch(el) { // banner图切换
@@ -17,21 +18,27 @@ function BannerSwitch(el) { // banner图切换
 function mask() {
   $('.footer-btn').click(function () {
     $('.mask').fadeIn(300);
-    $('body').css('overflow-y', 'hidden')
+    $('body').css('overflow-y', 'hidden');
   });
   $('#freeorder').click(function () {
     $('.order').fadeIn(300);
   });
   $('#addshop').click(function () {
-    $('.order').fadeOut(300);
-    $('.emceebar').fadeOut(300);
+    $('.order, .emceebar').fadeOut(300);
     $('.emcee-add').fadeIn(300);
   });
   $('#submit-order').click(function () {
     $('.order-price-info').removeClass('active');
-    $('.order-hotel').show();
-    $('.paymode').fadeIn(300);
+    $('.order-hotel, .paymode').fadeIn(300);
+
   });
+  $('.mask').click(function () {
+    $('.edit').removeClass('active').fadeOut();
+    $('.emceebar').fadeIn(300);
+    $('.paymode, .mask,.order, .emcee-add, .order-hotel').fadeOut(300);
+    $('body').css('overflow-y', 'visible');
+  });
+
   $('.emcee-offer a').click(function () {
     $('.emcee-offer a').removeClass('active');
     $(this).addClass('active');
@@ -40,7 +47,6 @@ function mask() {
     $('.paymode a').removeClass('active');
     $(this).addClass('active');
   });
-
 }
 
 //折叠 --lq
@@ -68,25 +74,28 @@ function orderFold() {
 function shopcarClear() {
 
   $('.js_numadd').click(function () {
-    var num = parseInt($('#js_edit_num').val());
-    $('#js_edit_num').val(num + 1);
+    var num = parseInt($('.js_edit_num').val());
+    $('.js_edit_num').val(num + 1);
   });
   $('.js_numminus').click(function () {
-    var num = parseInt($('#js_edit_num').val());
+    var num = parseInt($('.js_edit_num').val());
     if (num > 0) {
-      $('#js_edit_num').val(num - 1);
+      $('.js_edit_num').val(num - 1);
     }
   });
   $('.js_edit-delete').click(function () {
-    $('#js_edit_num').val(0);
+    $('.js_edit_num').val(0);
   });
   $('li').delegate('.js_edit_show', 'click', function () {
     var thisEdit = $(this).parent().parent().find('.edit');
     $('.mask').show();
-    if (thisEdit.hasClass('active')) {
-      thisEdit.removeClass('active');
-    } else {
-      thisEdit.addClass('active');
-    }
+    $('body').css('overflow-y', 'hidden')
+    thisEdit.addClass('active');
+  });
+}
+//输入框只能输入数字
+function onlyNum() {
+  $('.js_edit_num').bind('keyup afterpaste blur', function () {
+    this.value = this.value.replace(/\D/g, '');
   });
 }
