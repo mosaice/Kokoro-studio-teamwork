@@ -75,7 +75,7 @@
 }
 
 .order-item {
-  min-height: 142px;
+  min-height: 150px;
   padding-left: 140px;
   .item-title {
     padding-top: 10px;
@@ -85,7 +85,7 @@
     color: #444
   }
   .item-info {
-    margin: 10px 0;
+    margin: 15px 0;
     height: 20px;
     font-size: 20px;
     color: #ababab;
@@ -108,7 +108,7 @@
   background-color: $primary-color;
   color: #fff;
   p {
-    margin-bottom: 0;  
+    margin-bottom: 0;
     line-height: 2;
   }
 }
