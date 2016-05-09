@@ -26,6 +26,8 @@ $(function () {
 		$('.mask').fadeOut(300);
 		$('.details-add').fadeOut(300);
 		$('body').removeClass('overflowY');
+		$('body').css('overflow-y','visible');
+		
 	})
 
 })
