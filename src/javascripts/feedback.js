@@ -12,7 +12,6 @@
  * 创建日期: 2016-05-03
  * 修改日期: 2016-05-03
  */
-
 $(function () {
   $('.dropdown-select').click(function () {
     $('.feedbackinfo > img').fadeIn(300);
