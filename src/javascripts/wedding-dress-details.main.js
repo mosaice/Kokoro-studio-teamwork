@@ -12,23 +12,17 @@
  * 创建日期: 2016-05-04
  * 修改日期: 2016-05-04
  */
-
-
 $(function () {
-     //显示购物车列表
-	$('#addshop').click(function () {
-		$('.mask').fadeIn(300);
-		$('.details-add').fadeIn(300);
-		$('body').addClass('overflowY');
-	})
-	//点击遮罩退出
-	$('.mask').click(function () {
-		$('.mask').fadeOut(300);
-		$('.details-add').fadeOut(300);
-		$('body').removeClass('overflowY');
-		$('body').css('overflow-y','visible');
-		
-	})
+  $('#addshop').click(function () {
+    $('.mask').fadeIn(300);
+    $('.details-add').fadeIn(300);
+    $('body').addClass('overflowY');
+  })
 
-})
-	
+  $('.mask').click(function () {
+    $('.mask').fadeOut(300);
+    $('.details-add').fadeOut(300);
+    $('body').removeClass('overflowY');
+    $('body').css('overflow-y','visible');
+  });
+});
