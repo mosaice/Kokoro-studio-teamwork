@@ -4,7 +4,7 @@ $(function () {
   mask();
   orderFold();
   shopcarClear();
-  onlyNum()
+  onlyNum();
 });
 
 function BannerSwitch(el) { // banner图切换
@@ -12,7 +12,7 @@ function BannerSwitch(el) { // banner图切换
     full_width: true
     , interval: 3000, // 定时器时间
     height: '100%' // 盒子的高度
-  })
+  });
 }
 
 function mask() {
@@ -30,7 +30,6 @@ function mask() {
   $('#submit-order').click(function () {
     $('.order-price-info').removeClass('active');
     $('.order-hotel, .paymode').fadeIn(300);
-
   });
   $('.mask').click(function () {
     $('.edit').removeClass('active').fadeOut();
@@ -98,7 +97,7 @@ function shopcarClear() {
   $('li').delegate('.js_edit_show', 'click', function () {
     var thisEdit = $(this).parent().parent().find('.edit');
     $('.mask').show();
-    $('body').css('overflow-y', 'hidden')
+    $('body').css('overflow-y', 'hidden');
     thisEdit.addClass('active');
   });
 }

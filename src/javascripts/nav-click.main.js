@@ -31,6 +31,7 @@ function NavClick(parent, Region, Mask) {
       $('body').removeClass('overflowY');
     }
   });
+
   Mask.find('p').click(function(event) {
     Mask.find('p').removeClass('active');
     $(this).addClass('active');

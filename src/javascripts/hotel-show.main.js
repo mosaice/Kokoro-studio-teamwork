@@ -13,45 +13,19 @@
  * 修改日期: 2016-05-04
  */
 
-
 $(function () {
 
-	$('#meal1').click(function () {
-		$('#mask-list1').fadeIn(300);
-		$('body').addClass('overflowY');
-	})
-	$('#mask-list1').click(function () {
-		$('#mask-list1').fadeOut(300);
-		$('body').removeClass('overflowY');
-	})
+  $('.list-content-info').delegate('.list-meal', 'click', function (e) {
+    e.preventDefault();
+    var $list = $('.list-content-info').find('.list-meal');
+    var index = $list.index($(this));
+    $('.wedding-menu-mask').eq(index).fadeIn(300);
+    $('.wedding-menu-mask').eq(index).find('.mask').fadeIn(300);
+    $('body').addClass('overflowY');
+  });
 
-	$('#meal2').click(function () {
-		$('#mask-list2').fadeIn(300);
-		$('body').addClass('overflowY');
-	})
-	$('#mask-list2').click(function () {
-		$('#mask-list2').fadeOut(300);
-		$('body').removeClass('overflowY');
-	})
-
-	$('#meal3').click(function () {
-		$('#mask-list3').fadeIn(300);
-		$('body').addClass('overflowY');
-	})
-	$('#mask-list3').click(function () {
-		$('#mask-list3').fadeOut(300);
-		$('body').removeClass('overflowY');
-	})
-	
-	$('#meal4').click(function () {
-		$('#mask-list4').fadeIn(300);
-		$('body').addClass('overflowY');
-	})
-	$('#mask-list4').click(function () {
-		$('#mask-list4').fadeOut(300);
-		$('body').removeClass('overflowY');
-	})
-
-
-
-})
+  $('.wedding-menu-mask .mask').click(function () {
+    $(this).parent().fadeOut(300);
+    $('body').removeClass('overflowY');
+  });
+});
