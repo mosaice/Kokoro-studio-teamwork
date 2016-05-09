@@ -94,11 +94,10 @@
 	padding-bottom: 100px;
 	.details-list-box {
 		float: left;
-		width: 342px;
-		height: 433px;
 		font-size: 22px;
 		background: #fff;
 		margin: 5px 12px;
+		padding-bottom: 15px;
 		.list-box {
 			width: 342px;
 		}
@@ -123,6 +122,7 @@
 		.list-con {
 			background: url("../assets/images/icon/shopcar2.jpg") no-repeat;
 			background-position: 95% 98%;
+			background-size: 40px 38px;
 		}
 	}
 }
@@ -221,6 +221,7 @@
 .details-foot{
 	background: url(../assets/images/icon/shopcar3.png) no-repeat center center;
     background-size: 56px;
+	
 }
 
 
