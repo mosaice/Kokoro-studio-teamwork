@@ -13,7 +13,7 @@
  * 修改日期: 2016-05-04
  */
 $(function () {
-  $('#addshop').click(function () {
+  $('#choose-size').click(function () {
     $('.mask').fadeIn(300);
     $('.details-add').fadeIn(300);
     $('body').addClass('overflowY');
@@ -23,6 +23,6 @@ $(function () {
     $('.mask').fadeOut(300);
     $('.details-add').fadeOut(300);
     $('body').removeClass('overflowY');
-    $('body').css('overflow-y','visible');
+    $('body').css('overflow-y', 'visible');
   });
 });

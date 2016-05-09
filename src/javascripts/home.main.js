@@ -86,14 +86,14 @@ function orderFold() {
 
 function shopcarClear() {
   $('.js_numadd').click(function () {
-    var num = parseInt($('.js_edit_num').val());
-    $('.js_edit_num').val(num + 1);
+    var num = parseInt($(this).parent().parent().find('.js_edit_num').val());
+   $(this).parent().parent().find('.js_edit_num').val(num + 1);
   });
 
   $('.js_numminus').click(function () {
-    var num = parseInt($('.js_edit_num').val());
+    var num = parseInt($(this).parent().parent().find('.js_edit_num').val());
     if (num > 0) {
-      $('.js_edit_num').val(num - 1);
+      $(this).parent().parent().find('.js_edit_num').val(num - 1);
     }
   });
 
