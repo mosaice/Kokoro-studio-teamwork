@@ -2,12 +2,9 @@
 $(function () {
   BannerSwitch('.slider');
   mask();
-<<<<<<< HEAD
   orderFold();
   shopcarClear();
   onlyNum()
-=======
->>>>>>> 11a4ff101f4bdc8acd63b189ba5327379c3da70b
 });
 
 function BannerSwitch(el) { // banner图切换
@@ -31,7 +28,6 @@ function mask() {
     $('.emcee-add').fadeIn(300);
   });
   $('#submit-order').click(function () {
-<<<<<<< HEAD
     $('.order-price-info').removeClass('active');
     $('.order-hotel, .paymode').fadeIn(300);
 
@@ -41,9 +37,7 @@ function mask() {
     $('.emceebar').fadeIn(300);
     $('.paymode, .mask,.order, .emcee-add, .order-hotel').fadeOut(300);
     $('body').css('overflow-y', 'visible');
-=======
     $('.paymode').fadeIn(300);
->>>>>>> 11a4ff101f4bdc8acd63b189ba5327379c3da70b
   });
 
   $('.emcee-offer a').click(function () {
@@ -63,7 +57,6 @@ function mask() {
     $(this).addClass('active');
   });
 }
-<<<<<<< HEAD
 
 //折叠 --lq
 function orderFold() {
@@ -115,5 +108,3 @@ function onlyNum() {
     this.value = this.value.replace(/\D/g, '');
   });
 }
-=======
->>>>>>> 11a4ff101f4bdc8acd63b189ba5327379c3da70b

@@ -50,7 +50,9 @@
 }
 
 .js_checkbox {
-  position: relative;
+  dt {
+    position: relative;
+  }
   .edit {
     display: none;
     position: absolute;
