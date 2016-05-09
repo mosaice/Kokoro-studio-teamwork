@@ -29,3 +29,12 @@ $(function () {
     $('body').removeClass('overflowY');
   });
 });
+
+/**
+ * 作者: zhangweinan
+ * 作用: 商家介绍内容展开
+ * 创建日期: 2016-05-04
+ * 修改日期: 2016-05-04
+ */
+
+

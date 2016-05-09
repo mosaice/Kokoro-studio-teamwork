@@ -35,12 +35,12 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
       Mask.css({
         display: 'block'
       });
-      $('body').addClass('overflowY1');
+//      $('body').addClass('overflowY');
     } else {
       Mask.css({
         display: 'none'
       });
-      $('body').removeClass('overflowY1');
+//      $('body').removeClass('overflowY');
     }
   });
 
@@ -50,7 +50,7 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
   });
 
   Mask.click(function (event) {
-    $('body').removeClass('overflowY1');
+//    $('body').removeClass('overflowY');
     $(this).css('display', 'none');
   });
 
@@ -62,12 +62,12 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
       Mask1.css({
         display: 'block'
       });
-      $('body').addClass('overflowY2');
+//      $('body').addClass('overflowY');
     } else {
       Mask1.css({
         display: 'none'
       });
-      $('body').removeClass('overflowY2');
+//      $('body').removeClass('overflowY');
     }
   });
 
@@ -77,7 +77,7 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
   });
 
   Mask1.click(function (event) {
-    $('body').removeClass('overflowY2');
+//    $('body').removeClass('overflowY');
     $(this).css('display', 'none');
   });
 
@@ -90,12 +90,12 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
       Mask2.css({
         display: 'block'
       });
-      $('body').addClass('overflowY');
+//      $('body').addClass('overflowY');
     } else {
       Mask2.css({
         display: 'none'
       });
-      $('body').removeClass('overflowY');
+//      $('body').removeClass('overflowY');
     }
   });
 
@@ -105,7 +105,7 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
   });
 
   Mask2.click(function (event) {
-    $('body').removeClass('overflowY');
+//    $('body').removeClass('overflowY');
     $(this).css('display', 'none');
   });
 }

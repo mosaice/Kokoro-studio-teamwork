@@ -1,4 +1,3 @@
-
 $('.datepicker').pickadate({
   monthsFull: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12'],
   format: 'mm / dd / yyyy',
@@ -18,4 +17,4 @@ $('.calendar').click(function (e) {
   //      $('.emceebar').css('z-index', 13);
   //    }
   //  })
-});
+});	
