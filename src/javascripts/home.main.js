@@ -21,11 +21,11 @@ function mask() {
     $('body').css('overflow-y', 'hidden');
   });
   $('#freeorder').click(function () {
-    $('.order').fadeIn(300);
+    $('.order, .mask').fadeIn(300);
   });
   $('#addshop').click(function () {
     $('.order, .emceebar').fadeOut(300);
-    $('.emcee-add').fadeIn(300);
+    $('.emcee-add, .mask').fadeIn(300);
   });
   $('#submit-order').click(function () {
     $('.order-price-info').removeClass('active');
@@ -36,7 +36,6 @@ function mask() {
     $('.emceebar').fadeIn(300);
     $('.paymode, .mask,.order, .emcee-add, .order-hotel').fadeOut(300);
     $('body').css('overflow-y', 'visible');
-
   });
 
   $('.emcee-offer a').click(function () {

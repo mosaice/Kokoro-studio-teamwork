@@ -43,14 +43,26 @@
     .w-back {
       background: url(../assets/images/icon/w-back.png) no-repeat center center;
       background-size: 42px 42px;
+      -webkit-background-size: 42px 42px;
+      -moz-background-size: 42px 42px;
+      -ms-background-size: 42px 42px;
+      -o-background-size: 42px 42px;
     }
     .w-star {
       background: url(../assets/images/icon/w-star.png) no-repeat center center;
       background-size: 42px 42px;
+      -webkit-background-size: 42px 42px;
+      -moz-background-size: 42px 42px;
+      -ms-background-size: 42px 42px;
+      -o-background-size: 42px 42px;
     }
     .w-share {
       background: url(../assets/images/icon/w-share.png) no-repeat center center;
       background-size: 42px 42px;
+      -webkit-background-size: 42px 42px;
+      -moz-background-size: 42px 42px;
+      -ms-background-size: 42px 42px;
+      -o-background-size: 42px 42px;
     }
   }
   li:nth-of-type(1) {
@@ -63,6 +75,10 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   background-color: #f00;
 }
 
@@ -94,6 +110,10 @@
       width: 33%;
       height: 60px;
       box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
       line-height: 60px;
       font-size: 26px;
       white-space: nowrap;
@@ -120,6 +140,10 @@
   height: 110px;
   background: url(../assets/images/advertising/advertising02.jpg) no-repeat center center;
   background-size: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -ms-background-size: 100%;
+  -o-background-size: 100%;
 }
 
 //套餐介绍
@@ -161,6 +185,10 @@
     border-right: 1px solid $border-color;
     ;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
     a {
       float: left;
       width: 100%;
@@ -169,15 +197,27 @@
     .msg {
       background: url(../assets/images/icon/msg.png) no-repeat center center;
       background-size: 70px;
+      -webkit-background-size: 70px;
+      -moz-background-size: 70px;
+      -ms-background-size: 70px;
+      -o-background-size: 70px;
     }
     .call {
       background: url(../assets/images/icon/call.png) no-repeat center center;
       background-size: 70px;
+      -webkit-background-size: 70px;
+      -moz-background-size: 70px;
+      -ms-background-size: 70px;
+      -o-background-size: 70px;
     }
     .shopcar {
       position: relative;
       background: url(../assets/images/icon/shopcar.png) no-repeat center center;
       background-size: 70px;
+      -webkit-background-size: 70px;
+      -moz-background-size: 70px;
+      -ms-background-size: 70px;
+      -o-background-size: 70px;
       .shopnum {
         top: -15px;
         left: 108px;
