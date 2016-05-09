@@ -26,6 +26,10 @@
     color: #787878;
     background-color: #fff;
     box-shadow: none;
+    -weblit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
     border: 2px solid #ababab;
     span {
       display: inline-block;
@@ -36,6 +40,10 @@
       border-left: 2px solid #ababab;
       background: url(../assets/images/icon/select-arrow.png) no-repeat center center;
       background-size: 40px 40px;
+      -webkit-background-size: 40px 40px;
+      -moz-background-size: 40px 40px;
+      -ms-background-size: 40px 40px;
+      -o-background-size: 40px 40px;
     }
   }
   .dropdown-content {
@@ -43,6 +51,10 @@
     padding-bottom: 160px;
     border: 2px solid #ababab;
     box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
     li {
       width: 100%;
       min-height: 90px;

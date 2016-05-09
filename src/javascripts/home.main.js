@@ -22,12 +22,12 @@ function mask() {
   });
 
   $('#freeorder').click(function () {
-    $('.order').fadeIn(300);
+    $('.order, .mask').fadeIn(300);
   });
 
   $('#addshop').click(function () {
     $('.order, .emceebar').fadeOut(300);
-    $('.emcee-add').fadeIn(300);
+    $('.emcee-add, .mask').fadeIn(300);
   });
 
   $('#submit-order').click(function () {
