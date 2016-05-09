@@ -1,6 +1,7 @@
 //婚礼人页面  xiaowei
 .hotel-list-page {
-
+	
+	position: relative;
 	.list-content1 {
 		li {
 			padding: 20px;
@@ -79,7 +80,7 @@
 
 .mask-list{
 	display: none;
-	position: fixed;
+	position:absolute;
 	z-index: 10;
 	top: 191px;
 	width: 100%;

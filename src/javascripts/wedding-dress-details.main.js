@@ -14,58 +14,57 @@
  */
 $(function () {
   $('#choose-size').click(function () {
+	  
     $('.mask').fadeIn(300);
     $('.details-add').fadeIn(300);
     $('body').addClass('overflowY');
-  })
+  });
 
   $('.mask').click(function () {
     $('.mask').fadeOut(300);
     $('.details-add').fadeOut(300);
     $('body').removeClass('overflowY');
-    $('body').css('overflow-y', 'visible');
+    $('body').css('overflow-y','visible');
+  });
+})
+
+
+$(function () {
+  $('.wedding-search-btn1').click(function () {
+
+    $('.wedding-search-btn1').css({
+      'background-color': '#FF6600',
+      'color': '#fff'
+    });
+
+    $('.wedding-search-btn2').css({
+      'background-color': '#FFFFFF',
+      'color': '#FF6600'
+    });
   });
 
+  $('.wedding-search-btn2').click(function () {
+    $('.wedding-search-btn1').css({
+      'color': '#FF6600',
+      'background-color': '#fff'
+    });
 
+    $('.wedding-search-btn2').css({
+      'color': '#fff',
+      'background-color': '#FF6600'
+    });
+  });
+});
+$(function () {
 
-//
-//$(function () {
-//  $('.wedding-search-btn1').click(function () {
-//
-//    $('.wedding-search-btn1').css({
-//      'background-color': '#FF6600',
-//      'color': '#fff'
-//    });
-//
-//    $('.wedding-search-btn2').css({
-//      'background-color': '#FFFFFF',
-//      'color': '#FF6600'
-//    });
-//  });
-//
-//  $('.wedding-search-btn2').click(function () {
-//    $('.wedding-search-btn1').css({
-//      'color': '#FF6600',
-//      'background-color': '#fff'
-//    });
-//
-//    $('.wedding-search-btn2').css({
-//      'color': '#fff',
-//      'background-color': '#FF6600'
-//    });
-//  });
-//});
-//
-//$(function () {
-//
-//  $('.wedding-search-btn1').click(function () {
-//    $('.wedding-content').fadeIn(300);
-//    $('.wedding-production').fadeOut(300);
-//  });
-//
-//  $('.wedding-search-btn2').click(function(){
-//    $('.wedding-production').fadeIn(300);
-//    $('.wedding-content').fadeOut(300);
-//  });
-//
-//});
+  $('.wedding-search-btn1').click(function () {
+    $('.wedding-content').fadeIn(300);
+    $('.wedding-production').fadeOut(300);
+  });
+
+  $('.wedding-search-btn2').click(function(){
+    $('.wedding-production').fadeIn(300);
+    $('.wedding-content').fadeOut(300);
+  });
+
+});

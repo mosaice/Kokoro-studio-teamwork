@@ -72,12 +72,13 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
   });
 
   Mask1.find('p').click(function (event) {
+	  
     Mask1.find('p').removeClass('active');
     $(this).addClass('active');
   });
 
   Mask1.click(function (event) {
-//    $('body').removeClass('overflowY');
+    $('body').removeClass('overflowY');
     $(this).css('display', 'none');
   });
 
