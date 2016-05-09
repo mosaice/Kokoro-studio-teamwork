@@ -2,6 +2,9 @@
 $(function () {
   BannerSwitch('.slider');
   mask();
+  orderFold();
+  shopcarClear();
+  onlyNum();
 });
 
 function BannerSwitch(el) { // banner图切换
@@ -9,25 +12,33 @@ function BannerSwitch(el) { // banner图切换
     full_width: true
     , interval: 3000, // 定时器时间
     height: '100%' // 盒子的高度
-  })
+  });
 }
 
 function mask() {
   $('.footer-btn').click(function () {
     $('.mask').fadeIn(300);
-    $('body').css('overflow-y', 'hidden')
+    $('body').css('overflow-y', 'hidden');
   });
   $('#freeorder').click(function () {
     $('.order').fadeIn(300);
   });
   $('#addshop').click(function () {
-    $('.order').fadeOut(300);
-    $('.emceebar').fadeOut(300);
+    $('.order, .emceebar').fadeOut(300);
     $('.emcee-add').fadeIn(300);
   });
   $('#submit-order').click(function () {
-    $('.paymode').fadeIn(300);
+    $('.order-price-info').removeClass('active');
+    $('.order-hotel, .paymode').fadeIn(300);
   });
+  $('.mask').click(function () {
+    $('.edit').removeClass('active').fadeOut();
+    $('.emceebar').fadeIn(300);
+    $('.paymode, .mask,.order, .emcee-add, .order-hotel').fadeOut(300);
+    $('body').css('overflow-y', 'visible');
+
+  });
+
   $('.emcee-offer a').click(function () {
     $('.emcee-offer a').removeClass('active');
     $(this).addClass('active');
@@ -44,5 +55,55 @@ function mask() {
     $('.paymode a').removeClass('active');
     $(this).addClass('active');
   });
+}
 
+//折叠 --lq
+function orderFold() {
+
+  $('.clearfix').delegate('.js_item_price', 'click', function () {
+    var thisOrder = $(this).parent().parent().parent().find('.js_order_price_info');
+    if (thisOrder.hasClass('active')) {
+      thisOrder.removeClass('active');
+    } else {
+      thisOrder.addClass('active');
+    }
+  });
+  $('.orders-content').delegate('.js_item_price', 'click', function () {
+    var thisOrder = $(this).parent().parent().parent().parent().find('.js_order_price_info');
+    if (thisOrder.hasClass('active')) {
+      thisOrder.removeClass('active');
+    } else {
+      thisOrder.addClass('active');
+    }
+  });
+}
+
+//购物车结算 --lq
+function shopcarClear() {
+
+  $('.js_numadd').click(function () {
+    var num = parseInt($('.js_edit_num').val());
+    $('.js_edit_num').val(num + 1);
+  });
+  $('.js_numminus').click(function () {
+    var num = parseInt($('.js_edit_num').val());
+    if (num > 0) {
+      $('.js_edit_num').val(num - 1);
+    }
+  });
+  $('.js_edit-delete').click(function () {
+    $('.js_edit_num').val(0);
+  });
+  $('li').delegate('.js_edit_show', 'click', function () {
+    var thisEdit = $(this).parent().parent().find('.edit');
+    $('.mask').show();
+    $('body').css('overflow-y', 'hidden');
+    thisEdit.addClass('active');
+  });
+}
+//输入框只能输入数字
+function onlyNum() {
+  $('.js_edit_num').bind('keyup afterpaste blur', function () {
+    this.value = this.value.replace(/\D/g, '');
+  });
 }

@@ -1,3 +1,7 @@
+[type="checkbox"] + label {
+  max-width: 60%;
+}
+
 .ml-60 {
   margin-left: 60px;
 }
@@ -46,7 +50,9 @@
 }
 
 .js_checkbox {
-  position: relative;
+  dt {
+    position: relative;
+  }
   .edit {
     display: none;
     position: absolute;
