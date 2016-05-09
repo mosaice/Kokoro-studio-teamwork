@@ -36,7 +36,7 @@ function mask() {
     $('.emceebar').fadeIn(300);
     $('.paymode, .mask,.order, .emcee-add, .order-hotel').fadeOut(300);
     $('body').css('overflow-y', 'visible');
-    $('.paymode').fadeIn(300);
+
   });
 
   $('.emcee-offer a').click(function () {
