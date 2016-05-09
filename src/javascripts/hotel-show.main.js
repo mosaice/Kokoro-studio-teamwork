@@ -20,11 +20,12 @@ $(function () {
     var $list = $('.list-content-info').find('.list-meal');
     var index = $list.index($(this));
     $('.wedding-menu-mask').eq(index).fadeIn(300);
+    $('.wedding-menu-mask').eq(index).find('.mask').fadeIn(300);
     $('body').addClass('overflowY');
   });
 
-  $('.wedding-menu-mask').click(function () {
-    $(this).fadeOut(300);
+  $('.wedding-menu-mask .mask').click(function () {
+    $(this).parent().fadeOut(300);
     $('body').removeClass('overflowY');
   });
 });
