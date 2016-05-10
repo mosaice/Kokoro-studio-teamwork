@@ -17,7 +17,7 @@ $(function () {
     $('.mask').fadeIn(300);
     $('.details-add').fadeIn(300);
     $('body').addClass('overflowY');
-  })
+  });
 
   $('.mask').click(function () {
     $('.mask').fadeOut(300);
@@ -25,4 +25,4 @@ $(function () {
     $('body').removeClass('overflowY');
     $('body').css('overflow-y', 'visible');
   });
-});
+})
