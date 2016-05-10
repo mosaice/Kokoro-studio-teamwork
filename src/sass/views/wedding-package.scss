@@ -3,11 +3,13 @@
   margin-bottom: 95px;
   background-color: $background-color;
 }
+
 //轮播图
 .slider .indicators .indicator-item.active {
   background-color: #fff;
   opacity: 1;
 }
+
 .slider-box {
   position: relative;
   max-height: 530px;
@@ -22,6 +24,7 @@
     }
   }
 }
+
 .icon-list {
   position: absolute;
   top: 0;
@@ -66,6 +69,7 @@
     float: left;
   }
 }
+
 .redradius {
   position: absolute;
   width: 36px;
@@ -77,6 +81,7 @@
   -o-border-radius: 50%;
   background-color: #f00;
 }
+
 .package-info {
   background-color: #fff;
   padding-top: 10px;
@@ -91,6 +96,7 @@
     }
   }
 }
+
 .price {
   margin-top: 20px;
   height: 75px;
@@ -126,6 +132,7 @@
     }
   }
 }
+
 //广告
 .ad {
   margin: 15px 0;
@@ -138,6 +145,7 @@
   -ms-background-size: 100%;
   -o-background-size: 100%;
 }
+
 //套餐介绍
 .package-introduce {
   background-color: #fff;
@@ -161,6 +169,56 @@
     }
   }
 }
+
+.package-add {
+  font-size: 28px;
+  h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+  }
+  .package-address {
+    padding: 30px 50px 0;
+    height: 200px;
+    border-bottom: 1px dotted #444;
+    li {
+      float: left;
+      width: 30%;
+      height: 65px;
+      line-height: 65px;
+      border: 2px solid #5a5a5a;
+      text-align: center;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      a {
+        float: left;
+        width: 100%;
+        height: 100%;
+        font-size: 24px;
+        color: #ababab;
+      }
+    }
+    li:nth-of-type(2) {
+      margin: 0 5%;
+    }
+    .active {
+      border-color: #f00;
+    }
+  }
+  .package-num {
+    padding: 30px 50px;
+    height: 170px;
+    .js_num_value {
+      color: #f00;
+    }
+    .moniinput {
+      margin-top: -5px;
+    }
+  }
+}
+
 //底部菜单
 .footerbar {
   position: fixed;

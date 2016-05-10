@@ -61,6 +61,11 @@ function mask() {
     $('.paymode a').removeClass('active');
     $(this).addClass('active');
   });
+  
+  $('.package-address li').click(function () {
+    $('.package-address li').removeClass('active');
+    $(this).addClass('active');
+  });
 
 }
 
