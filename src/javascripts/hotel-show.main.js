@@ -40,7 +40,6 @@ $(function () {
 
   $('.img-none').click(function () {
 
-
 	  if(!$('.img-none').hasClass('active')) {
 		  $('.img-none').addClass('active');
 		  $('.hotel-info').css('height','auto');
