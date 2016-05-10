@@ -29,3 +29,26 @@ $(function () {
     $('body').removeClass('overflowY');
   });
 });
+
+/**
+ * 作者: zhangweinan
+ * 作用: 商家介绍内容展开
+ * 创建日期: 2016-05-04
+ * 修改日期: 2016-05-04
+ */
+$(function () {
+  $('.hotel-introduce-box ').click(function () {
+     
+    $('.hotel-info').css('height','auto');
+    $('.img-none').css('opacity','0');
+	
+    });
+	
+  $('.img-none').click(function () {
+     
+    $('.hotel-info').css('height','100px');
+    $('.img-none').css('opacity','1');
+	
+    });
+
+ });

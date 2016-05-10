@@ -95,22 +95,40 @@
 		}
 }
 .business-introduction {
-	min-height:  440px;
-	background: url("../assets/images/icon/arrow-s.png") no-repeat;
+	
+	
 	background-size: 39px 22px;
 	background-position: 50% 85%;
+	margin-bottom: 50px;
 	.hotel-introduce-box {
 		padding-top: 15px;
 		width: 650px;
 		margin: 0 auto;
 	}
+	.hotel-introuce-show {
+		text-align: center;
+		height: 100px;
+		margin: 30px;
+		img {
+			vertical-align: middle;
+			width: 39px;
+			height: 22px;
+			position: absolute;
+			margin-bottom: 50px;
+		}
+	}
 	.hotel-titel {
 		text-align: center;
+	}
+	.hotel-info {
+		overflow:hidden;
+		height: 200px;
 	}
 	.hotel-introduce {
 		line-height:2em;
 		font-size: 24px;
 		color: #939393;
+		
 		
 	}
 }
