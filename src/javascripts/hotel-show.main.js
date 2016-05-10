@@ -37,16 +37,18 @@ $(function () {
  * 修改日期: 2016-05-04
  */
 $(function () {
-  $('.hotel-introduce-box ').click(function () {
-    $('.info-hide').slideDown(300);
-    $('.img-none').css('opacity','0');
-
-    });
 
   $('.img-none').click(function () {
-    $('.info-hide').slideUp(300);
-    $('.img-none').css('opacity','1');
 
+	  if (!$('.img-none').hasClass('active')) {
+		  $('.img-none').addClass('active');
+		  $('.hotel-info').css('height', 'auto');
+	  }else {
+		  $('.img-none').removeClass('active');
+		  $('.hotel-info').css('height', 100 + 'px');
+	  }
     });
-
  });
+
+
+

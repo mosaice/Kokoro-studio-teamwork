@@ -1,4 +1,4 @@
-.hotel-show-page{
+.hotel-show-page {
 	margin-bottom: 98px;
 }
 .list-text1 {
@@ -91,11 +91,10 @@
 
 	}
 	.pad-left {
-			padding-left: 25px;
-		}
+		padding-left: 25px;
+	}
 }
 .business-introduction {
-
 
 	background-size: 39px 22px;
 	background-position: 50% 85%;
@@ -115,19 +114,29 @@
 			height: 22px;
 			position: absolute;
 			margin-bottom: 50px;
+			transform: rotateZ()
+		}
+		.active {
+			transform: rotate(180deg);
+			
 		}
 	}
 	.hotel-titel {
 		text-align: center;
 	}
 	.hotel-info {
-		overflow:hidden;
+
+		overflow: hidden;
+		height: 200px;
+
+		
+
 	}
   .info-hide {
     display: none;
   }
 	.hotel-introduce {
-		line-height:2em;
+		line-height: 2em;
 		font-size: 24px;
 		color: #939393;
 	}
@@ -213,10 +222,10 @@
 			}
 			.menu-info {
 				line-height: 1.7em;
-			    padding-top: 5px;
+				padding-top: 5px;
 				padding-left: 30px;
 				padding-bottom: 30px;
-				font-size:26px;
+				font-size: 26px;
 			}
 		}
 	}
@@ -239,11 +248,9 @@
 }
 
 .hotel-slider-box{
-
 	height: 530px;
 	max-height: 530px;
 }
-
-.overflowY{
+.overflowY {
 	overflow-y: hidden;
 }
