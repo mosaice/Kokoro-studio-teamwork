@@ -37,7 +37,9 @@ $(function () {
  * 修改日期: 2016-05-04
  */
 $(function () {
+
   $('.img-none').click(function () {
+
 
 	  if(!$('.img-none').hasClass('active')) {
 		  $('.img-none').addClass('active');

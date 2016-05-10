@@ -56,6 +56,7 @@
 		color: #777777;
 		font-family: "微软雅黑";
 		border-bottom: 0.025rem solid #E1E1E1;
+
 	}
 }
 .banquet-title {
@@ -67,6 +68,7 @@
 		line-height: 100px;
 		border-bottom: 1px solid #e1e1e1;
 		font-size: 30px;
+
 	}
 }
 .wedding-menu {
@@ -77,6 +79,7 @@
 		padding: 0;
 		color: #555555;
 		border-bottom: 1px solid #E1E1E1;
+
 		background: url("../assets/images/icon/arrow-s1.png") no-repeat;
 		background-size: 16px 28px;
 		background-position: 98% 50%;
@@ -85,12 +88,14 @@
 			float: right;
 			margin-right: 50px;
 		}
+
 	}
 	.pad-left {
 		padding-left: 25px;
 	}
 }
 .business-introduction {
+
 	background-size: 39px 22px;
 	background-position: 50% 85%;
 	margin-bottom: 50px;
@@ -120,9 +125,16 @@
 		text-align: center;
 	}
 	.hotel-info {
+
 		overflow: hidden;
 		height: 200px;
+
+		
+
 	}
+  .info-hide {
+    display: none;
+  }
 	.hotel-introduce {
 		line-height: 2em;
 		font-size: 24px;
@@ -172,6 +184,7 @@
 	}
 }
 .wedding-menu-mask {
+
 	position: fixed;
 	height: 1000px;
 	width: 750px;
@@ -233,7 +246,8 @@
 		line-height: 50px;
 	}
 }
-.hotel-slider-box {
+
+.hotel-slider-box{
 	height: 530px;
 	max-height: 530px;
 }

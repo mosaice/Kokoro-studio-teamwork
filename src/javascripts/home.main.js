@@ -87,7 +87,7 @@ function orderFold() {
 function shopcarClear() {
   $('.js_numadd').click(function () {
     var num = parseInt($(this).parent().parent().find('.js_edit_num').val());
-   $(this).parent().parent().find('.js_edit_num').val(num + 1);
+    $(this).parent().parent().find('.js_edit_num').val(num + 1);
   });
 
   $('.js_numminus').click(function () {
@@ -98,7 +98,7 @@ function shopcarClear() {
   });
 
   $('.js_edit-delete').click(function () {
-    $('.js_edit_num').val(0);
+    $(this).parent().parent().find('.js_edit_num').val(0);
   });
 
   $('li').delegate('.js_edit_show', 'click', function () {

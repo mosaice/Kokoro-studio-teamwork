@@ -66,5 +66,9 @@ $(function () {
     $('.wedding-production').fadeIn(300);
     $('.wedding-content').fadeOut(300);
   });
+<<<<<<< HEAD
+})
+=======
 
 });
+>>>>>>> 60929c8448550f30f2196eaa361cf58840634131
