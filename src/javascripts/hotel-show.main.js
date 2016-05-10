@@ -40,14 +40,14 @@ $(function () {
 
   $('.img-none').click(function () {
 
-	  if(!$('.img-none').hasClass('active')) {
+	  if (!$('.img-none').hasClass('active')) {
+
 		  $('.img-none').addClass('active');
-		  $('.hotel-info').css('height','auto');
+		  $('.hotel-info').css('height', 'auto');
 	  }else {
 		  $('.img-none').removeClass('active');
-		  $('.hotel-info').css('height',100+'px');
+		  $('.hotel-info').css('height', 100 + 'px');
 	  }
-
     });
  });
 

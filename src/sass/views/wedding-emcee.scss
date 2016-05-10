@@ -122,7 +122,7 @@
   left: 0;
   z-index: 15;
   width: 100%;
-  height: 597px;
+  height: auto;
   background-color: #fff;
   .emcee-photo {
     height: 205px;
@@ -167,15 +167,15 @@
       border: 1px solid #f00;
     }
   }
-  .emcee-sure {
-    height: 98px;
-    line-height: 98px;
-    text-align: center;
-    a {
-      float: left;
-      width: 100%;
-      color: #fff;
-      background-color: $primary-color;
-    }
+}
+.emcee-sure {
+  height: 98px;
+  line-height: 98px;
+  text-align: center;
+  a {
+    float: left;
+    width: 100%;
+    color: #fff;
+    background-color: $primary-color;
   }
 }
