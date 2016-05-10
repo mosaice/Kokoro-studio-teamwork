@@ -9,6 +9,7 @@
 @import "./wedding-package"; //婚礼 -editor = lq
 @import "./wedding-emcee"; //婚礼住持人详情9.1 -editor = lq
 @import "./submit-order"; //订单提交支付 -editor = lq
+@import "./shopcar-page"; //购物车页面 -editor = lq
 // 首页样式 - Momo
 @import "./home/index";
 // 收货样式 - Momo
@@ -16,6 +17,10 @@
 @import "./hotel-list"; //酒店列表 - xiaowei
 @import "./hotel-show"; //酒店详情 - xiaowei
 @import "./wedding-people";//婚礼人 - xiaowei
+@import "./wedding-dress-details";//婚纱礼服详情 - xiaowei
+@import "./wedding-dress-list";//婚纱列表详情 - xiaowei  
+
+
 // 套装样式 - Momo
 @import "./wedding-suit/index";
 

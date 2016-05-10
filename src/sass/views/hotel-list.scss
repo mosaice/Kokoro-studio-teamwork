@@ -1,6 +1,7 @@
 //婚礼人页面  xiaowei
 .hotel-list-page {
-
+	
+	position: relative;
 	.list-content1 {
 		li {
 			padding: 20px;
@@ -8,8 +9,7 @@
 			.list-content-pic {
 				display: block;
 				float: left;
-				width: 100%;
-				height: 100%;
+				
 				max-width: 184px;
 				max-height: 134px;
 			}
@@ -20,7 +20,7 @@
 					font-size: 30px;
 					;
 					color: #565656;
-					padding-top: 16px;
+					
 				}
 				p {
 					padding-top: 14px;
@@ -43,7 +43,7 @@
 					}
 				}
 				.list-text-icon {
-					margin-top: -30px;
+					margin-top: -1rem;
 				}
 			}
 		}
@@ -80,7 +80,7 @@
 
 .mask-list{
 	display: none;
-	position: fixed;
+	position:absolute;
 	z-index: 10;
 	top: 191px;
 	width: 100%;

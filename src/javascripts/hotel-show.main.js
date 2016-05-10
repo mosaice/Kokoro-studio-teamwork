@@ -13,16 +13,43 @@
  * 修改日期: 2016-05-04
  */
 
-
 $(function () {
 
-  $('.list-meal1 a').click(function () {
-    $('.wedding-menu-mask').fadeIn(300);
+  $('.list-content-info').delegate('.list-meal', 'click', function (e) {
+    e.preventDefault();
+    var $list = $('.list-content-info').find('.list-meal');
+    var index = $list.index($(this));
+    $('.wedding-menu-mask').eq(index).fadeIn(300);
+    $('.wedding-menu-mask').eq(index).find('.mask').fadeIn(300);
     $('body').addClass('overflowY');
-  })
-  $('.wedding-menu-mask').click(function () {
-    $('.wedding-menu-mask').fadeOut(300);
-    $('body').removeClass('overflowY');
-  })
+  });
 
-})
+  $('.wedding-menu-mask .mask').click(function () {
+    $(this).parent().fadeOut(300);
+    $('body').removeClass('overflowY');
+  });
+});
+
+/**
+ * 作者: zhangweinan
+ * 作用: 商家介绍内容展开
+ * 创建日期: 2016-05-04
+ * 修改日期: 2016-05-04
+ */
+$(function () {
+
+  $('.img-none').click(function () {
+
+	  if (!$('.img-none').hasClass('active')) {
+
+		  $('.img-none').addClass('active');
+		  $('.hotel-info').css('height', 'auto');
+	  }else {
+		  $('.img-none').removeClass('active');
+		  $('.hotel-info').css('height', 100 + 'px');
+	  }
+    });
+ });
+
+
+

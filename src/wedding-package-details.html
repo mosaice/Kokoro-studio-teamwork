@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>竞嫁网</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
   <link rel="stylesheet" href="static/assets/css/materialize.min.css" charset="utf-8">
   <link rel="stylesheet" href="static/assets/css/responsive.css" charset="utf-8">
   <link rel="stylesheet" href="static/css/index.main.debug.css" charset="utf-8">
@@ -12,6 +12,7 @@
 
 <body>
   <div class="wedding-package">
+    <div class="mask"></div>
     <div class="web-top"></div>
     <div class="slider slider-box">
       <ul class="slides">
@@ -83,6 +84,39 @@
       <p class="imgbox"><img src="static/assets/images/banner/w-banner01.jpg" alt="" title=""></p>
 
     </div>
+    <div class="emcee-add package-add">
+      <div class="package-address">
+        <h2>配送</h2>
+        <ul>
+          <li class="active">
+            <a href="javascript:void(0)">内环以内</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">内环和中环之间</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">中环和外环之间</a>
+          </li>
+        </ul>
+      </div>
+      <div class="package-num">
+        <h2>桌数</h2>
+        <div class="left"><span class="js_num_value">10&nbsp;</span>桌+</div>
+        <div class="left moniinput">
+          <input type="text" class="js_edit_num" value="0">
+          <div class="spinner right">
+            <div class="js_numadd">
+              <div></div>
+            </div>
+            <div class="js_numminus">
+              <div></div>
+            </div>
+          </div>
+        </div>
+        &nbsp;桌
+      </div>
+      <div class="emcee-sure"><a href="">确定</a></div>
+    </div>
     <div class="footerbar">
       <ul>
         <li>
@@ -95,7 +129,7 @@
           <a href="" class="shopcar"> <span class="redradius shopnum">10</span></a>
         </li>
         <li class="footer-btn">
-          <a href="">加入购物车</a>
+          <a href="javascript:void(0)" id="addshop">加入购物车</a>
         </li>
       </ul>
     </div>

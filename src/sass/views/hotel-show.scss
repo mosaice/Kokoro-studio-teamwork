@@ -1,4 +1,4 @@
-.hotel-show-page{
+.hotel-show-page {
 	margin-bottom: 98px;
 }
 .list-text1 {
@@ -56,7 +56,7 @@
 		color: #777777;
 		font-family: "微软雅黑";
 		border-bottom: 0.025rem solid #E1E1E1;
-			
+
 	}
 }
 .banquet-title {
@@ -68,7 +68,7 @@
 		line-height: 100px;
 		border-bottom: 1px solid #e1e1e1;
 		font-size: 30px;
-		
+
 	}
 }
 .wedding-menu {
@@ -79,7 +79,7 @@
 		padding: 0;
 		color: #555555;
 		border-bottom: 1px solid #E1E1E1;
-		
+
 		background: url("../assets/images/icon/arrow-s1.png") no-repeat;
 		background-size: 16px 28px;
 		background-position: 98% 50%;
@@ -88,30 +88,57 @@
 			float: right;
 			margin-right: 50px;
 		}
-		
+
 	}
 	.pad-left {
-			padding-left: 25px;
-		}
+		padding-left: 25px;
+	}
 }
 .business-introduction {
-	min-height:  440px;
-	background: url("../assets/images/icon/arrow-s.png") no-repeat;
+
 	background-size: 39px 22px;
 	background-position: 50% 85%;
+	margin-bottom: 50px;
 	.hotel-introduce-box {
 		padding-top: 15px;
 		width: 650px;
 		margin: 0 auto;
 	}
+	.hotel-introuce-show {
+		text-align: center;
+		height: 100px;
+		margin: 30px;
+		img {
+			vertical-align: middle;
+			width: 39px;
+			height: 22px;
+			position: absolute;
+			margin-bottom: 50px;
+			transform: rotateZ()
+		}
+		.active {
+			transform: rotate(180deg);
+			
+		}
+	}
 	.hotel-titel {
 		text-align: center;
 	}
+	.hotel-info {
+
+		overflow: hidden;
+		height: 200px;
+
+		
+
+	}
+  .info-hide {
+    display: none;
+  }
 	.hotel-introduce {
-		line-height:2em;
+		line-height: 2em;
 		font-size: 24px;
 		color: #939393;
-		
 	}
 }
 .bottom-info {
@@ -157,7 +184,7 @@
 	}
 }
 .wedding-menu-mask {
-	
+
 	position: fixed;
 	height: 1000px;
 	width: 750px;
@@ -170,10 +197,11 @@
 		top: 0;
 		background: rgba(0, 0, 0, 0.5);
 		z-index: 5;
+		display: block;
 	}
 	.menu-box {
 		width: 687px;
-		height: 27.825rem;
+		height: 91.8%;
 		position: fixed;
 		top: 0;
 		right: 0;
@@ -194,10 +222,10 @@
 			}
 			.menu-info {
 				line-height: 1.7em;
-			    padding-top: 5px;
+				padding-top: 5px;
 				padding-left: 30px;
 				padding-bottom: 30px;
-				font-size:26px;
+				font-size: 26px;
 			}
 		}
 	}
@@ -220,11 +248,9 @@
 }
 
 .hotel-slider-box{
-	
 	height: 530px;
-	max-height: 530px;	
+	max-height: 530px;
 }
-
-.overflowY{
+.overflowY {
 	overflow-y: hidden;
 }

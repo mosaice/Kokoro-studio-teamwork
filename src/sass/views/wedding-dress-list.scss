@@ -1,0 +1,23 @@
+.hotel-list-page {
+	.row{
+		background: #F2F2F2;
+	}
+	.list-content1 {
+		.list-content-img {
+			img {
+				float: left;
+				vertical-align: middle;
+				height: 136px;
+				width: 125px;
+			}
+			del {
+				padding-left: 50px;
+				color: #939393;
+				font-size: 20px;
+			}
+			.pl-180 {
+				padding-left: 180px;
+			}
+		}
+	}
+}
