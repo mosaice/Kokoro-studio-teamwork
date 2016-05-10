@@ -5,6 +5,35 @@ $(function() {
 
   CheCked.ClickOfAll($ParentCheck, $ChildCheck, $Checkbox);
   CheCked.ClickOfChild($ParentCheck, $ChildCheck, $Checkbox);
+
+    $('#function-star1').raty({
+      number: 5,//多少个星星设置
+      targetType: 'hint',//类型选择，number是数字值，hint，是设置的数组值
+      path      : 'static/assets/images/icon',
+      cancelOff : 'star01.png',
+      cancelOn  : 'star02.png',
+      size      : 49,
+      starOff   : 'star01.png',
+      starOn    : 'star02.png',
+      target    : '#function-hint',
+      cancel    : false,
+      targetKeep: true,
+      targetText: '请选择评分'
+    });
+    $('#function-star2').raty({
+      number: 5,//多少个星星设置
+      targetType: 'hint',//类型选择，number是数字值，hint，是设置的数组值
+      path      : 'static/assets/images/icon',
+      cancelOff : 'star01.png',
+      cancelOn  : 'star02.png',
+      size      : 49,
+      starOff   : 'star01.png',
+      starOn    : 'star02.png',
+      target    : '#function-hint',
+      cancel    : false,
+      targetKeep: true,
+      targetText: '请选择评分'
+    });
 })
 
 
