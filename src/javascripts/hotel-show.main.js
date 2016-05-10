@@ -38,17 +38,15 @@ $(function () {
  */
 $(function () {
   $('.hotel-introduce-box ').click(function () {
-     
-    $('.hotel-info').css('height','auto');
+    $('.info-hide').slideDown(300);
     $('.img-none').css('opacity','0');
-	
+
     });
-	
+
   $('.img-none').click(function () {
-     
-    $('.hotel-info').css('height','100px');
+    $('.info-hide').slideUp(300);
     $('.img-none').css('opacity','1');
-	
+
     });
 
  });
