@@ -1,0 +1,23 @@
+  .picker__footer {
+    padding: 10px 0;
+    button {
+      font-size: $l-fontSize;
+    }
+  }
+  
+  .picker__calendar-container {
+    font-size: $l-fontSize!important;
+  }
+  
+  .picker__holder {
+    .picker__frame {
+      width: 80%;
+      height: 80%;
+      top: 3%;
+      max-width: 80%;
+      .picker__day--infocus {
+        padding: 15px 0;
+        ;
+      }
+    }
+  }

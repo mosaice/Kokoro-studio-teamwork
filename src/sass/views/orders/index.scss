@@ -1,0 +1,126 @@
+// 订单页面样式 - Momo
+@import "./btn";
+@import "./title";
+@import "./textarea";
+.orders-list {
+  background-color: #f2f2f2;
+  li {
+    background-color: #fff;
+    margin-bottom: 15px;
+  }
+}
+.orders-content {
+  height: 160px;
+  padding-left: 36px;
+  padding-right: 50px;
+  border-bottom: 1px solid #e1e1e1;
+  position: relative;
+  .orders-content-text {
+    width: 450px;
+    font-size: 24px;
+    .orders-content-text-t {
+      h2 {
+        font-size: 24px;
+        color: #565656;
+        max-width: 270px;
+      }
+      p {
+        font-size: 24px;
+        color: #f00;
+      }
+    }
+    .orders-content-text-b {
+      font-size: 24px;
+      .text-num {
+        color: #565656;
+      }
+    }
+  }
+}
+.orders-content-l {
+  line-height: 160px;
+}
+.orders-content-r{
+  margin-left: 160px;
+}
+// 图片样式
+.orders-content-pic {
+  width: 120px;
+  height: 120px;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0 auto 60px;
+}
+.ml-10{
+  margin-left: 10px;
+}
+
+// 底部评价
+.form-eva-list{
+  padding-left: 50px;
+  padding-top: 57px;
+  li{
+    margin-bottom: 50px;
+    h3{
+      font-size: 30px;
+      line-height: 39px;
+      margin-right: 15px;
+    }
+  }
+}
+
+
+// 食物的样式
+.orders-content-text-food {
+  margin-top: 40px;
+  .orders-content-text-b {
+    margin-top: 34px;
+    .text-menu {
+      color: #787878;
+      strong {
+        font-weight: normal;
+        vertical-align: middle;
+      }
+      span {
+        color: #949494;
+        font-size: 18px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+// 装扮的样式
+.orders-content-text-adorn {
+  margin-top: 25px;
+  .orders-content-text-b,
+  .orders-content-text-m {
+    color: #787878;
+    margin-top: 20px;
+  }
+  .orders-content-text-b strong {
+    font-weight: normal;
+  }
+}
+// 衣服的样式
+.orders-content-text-dress {
+  margin-top: 20px;
+  .orders-content-text-b {
+    margin-top: 40px;
+  }
+}
+@media (max-width:320px) {
+  .orders-content-text-food {
+    margin-top: 30px;
+  }
+  .orders-content-text-adorn .orders-content-text-b, .orders-content-text-adorn .orders-content-text-m{
+    margin-top: 15px;
+  }
+  .orders-content-text-dress{
+    margin-top: 15px;
+  }
+  .orders-content .orders-content-text .orders-content-text-b{
+    margin-top: 10px;
+  }
+}

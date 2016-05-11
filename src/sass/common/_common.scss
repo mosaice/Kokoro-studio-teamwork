@@ -2,13 +2,138 @@
  * 多个页面通用的方法
  * 例子如下
  */
-
- /**
+/**
   * 父级框下的垂直绝对定位
   */
- @mixin vertical-center () {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   margin: auto;
- }
+@mixin vertical-center () {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+// 头顶 - momo
+@mixin web-top () {
+  height: 40px;
+  background-color: $primary-color;
+  position: relative;
+  z-index: 1003;
+}
+// 清楚浮动 - momo
+@mixin clearfix () {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+// 公共class 方法
+.warp{
+  width: 100%;
+}
+.row {
+  margin: 0;
+}
+.row .col {
+  padding: 0;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.full,
+html {
+  height: 100%;
+}
+.web-top {
+  height: 40px;
+  background-color: $primary-color;
+}
+
+.overflowY{
+  overflow-y: hidden!important;
+}
+.overflowY1{
+  overflow-y: hidden;
+}
+.overflowY2{
+  overflow-y: hidden;
+}
+
+//自定义偏移量
+.mr-10{
+  margin-right: 10px;
+}
+.mr-15 {
+  margin-right: 15px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+.mr-30 {
+  margin-right: 30px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.ml-0 {
+  margin-left: 0;
+}
+.ml-20 {
+  margin-left: 20px;
+}
+.ml-60{
+  margin-left: 60px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.pt-25{
+  padding-top: 25px;
+}
+.pt-30{
+  padding-top: 30px;
+}
+.pl-180{
+	padding-left: 180px;
+}
+// 颜色列表
+.color-blue {
+  background: $primary-color;
+}
+.color-red {
+  background: red;
+}
+.color-orange {
+  background: orange;
+}
+.color-black {
+  background: black;
+}
+
+.border-none {
+  border: none!important;
+}

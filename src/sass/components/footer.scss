@@ -1,0 +1,31 @@
+// 酒店图片底部 - libang
+
+.fix-row-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 24px;
+  .col {
+    height: 100px;
+  }
+  .s9 {
+    background: #f2f2f2;
+    color: #000;
+    p {
+      padding-left: 20px;
+    }
+  }
+  .s3 {
+    background: #72cfc7;
+    color: #fff;
+  }
+}
+
+// <div class="fix-row-footer row">
+//   <div class="col s9 valign-wrapper">
+//     <p class="valign">上海外滩华尔道夫酒店</p>
+//   </div>
+//   <div class="col s3 valign-wrapper">
+//     <p class="valign center-block">查看酒店</p>
+//   </div>
+// </div>
