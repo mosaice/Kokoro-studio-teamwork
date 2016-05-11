@@ -5,7 +5,6 @@ $(function() {
 
   CheCked.ClickOfAll($ParentCheck, $ChildCheck, $Checkbox);
   CheCked.ClickOfChild($ParentCheck, $ChildCheck, $Checkbox);
-<<<<<<< HEAD
 
     $('#function-star1').raty({
       number: 5,//多少个星星设置
@@ -35,11 +34,7 @@ $(function() {
       targetKeep: true,
       targetText: '请选择评分'
     });
-})
-
-=======
 });
->>>>>>> 5739a045b3e4eeeec327aa95136bbecad4d9cb18
 
 function ClickChecked(parent, child) {
   this.parent = parent;
@@ -63,7 +58,7 @@ ClickChecked.prototype.ClickOfChild = function (parent, child, box) {
   box.each(function (index, el) {
     var $self = $(this);
     $self.find(child).click(function (event) {
-      var $allchild =$(this).parents('dt').parent(box).find(child);
+      var $allchild = $(this).parents('dt').parent(box).find(child);
       var $determine = null;
       for (var i = 0; i < $allchild.length; i++) {
         if ($allchild[i].checked === false) {
@@ -72,7 +67,7 @@ ClickChecked.prototype.ClickOfChild = function (parent, child, box) {
           $determine = true;
         }
       }
-      if ($(this).prop('checked') && $determine ) {
+      if ($(this).prop('checked') && $determine) {
         parent.eq(index).prop('checked', true);
       } else {
         parent.eq(index).prop('checked', false);

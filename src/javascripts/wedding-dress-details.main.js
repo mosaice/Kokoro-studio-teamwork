@@ -14,14 +14,14 @@
  */
 $(function () {
   $('#choose-size').click(function () {
-	  
+
     $('.mask').fadeIn(300);
     $('.details-add').fadeIn(300);
     $('body').addClass('overflowY');
   });
-	
+
 $('#addshop').click(function () {
-	  
+
     $('.mask').fadeIn(300);
     $('.details-add').fadeIn(300);
     $('body').addClass('overflowY');
@@ -73,7 +73,4 @@ $(function () {
     $('.wedding-production').fadeIn(300);
     $('.wedding-content').fadeOut(300);
   });
-
-
 });
-

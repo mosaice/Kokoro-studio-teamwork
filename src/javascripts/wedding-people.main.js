@@ -72,7 +72,7 @@ function NavClick(parent, Region, Mask, Mask1, Mask2) {
   });
 
   Mask1.find('p').click(function (event) {
-	  
+
     Mask1.find('p').removeClass('active');
     $(this).addClass('active');
   });
