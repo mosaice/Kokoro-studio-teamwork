@@ -1,5 +1,5 @@
 var gulp = require('gulp');
 
 gulp.task('default', ['clean'], function () {
-  gulp.start('sass', 'html', 'images', 'javascripts', 'watch');
+  gulp.start('sass', 'html', 'assets', 'javascripts', 'watch');
 });

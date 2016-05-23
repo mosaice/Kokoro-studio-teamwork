@@ -1,0 +1,29 @@
+// 个人中心 - libang
+
+
+.personal-center-page {
+  background: $background-color;
+  min-height: 100%;
+  padding-bottom: 20px;
+  .front {
+    width: 30px;
+    height: 45px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -22.5px;
+  }
+
+  .account {
+    height: 130px;
+    border-bottom: 1px solid $border-color;/*no*/
+    line-height: 130px;
+    font-size: 30px;
+    background: #fff;
+    margin-bottom: 15px;
+    .s6 {
+      padding-left: 30px;
+    }
+  }
+
+}

@@ -1,0 +1,19 @@
+// 感谢反馈 - libang
+
+.thank-feedback-page {
+  background: $background-color;
+  min-height: 100%;
+  .thank {
+    background: #fff;
+    margin-top: 15px;
+    height: 100vw;
+    p {
+      font-size: 24px;
+      color: #e1e1e1;
+      &:first-child {
+        padding-top: 30vw;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}

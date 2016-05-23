@@ -1,0 +1,26 @@
+// 首页导航 - Momo
+.mo-menu {
+  height: 170px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .menu-title{
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    color: #333232;
+  }
+  ul{
+    margin: 20px auto 0;
+  }
+}
+
+// <div class="mo-menu">
+//   <ul class="row">
+//     <li class="col s3">
+//       <a href="">
+//         <p class="menu-icon">
+//           <img src="static/assets/images/icon/menu01.png" alt="" title="">
+//         </p>
+//         <h2 class="menu-title">婚礼套餐</h2>
+//       </a>
+//     </li>

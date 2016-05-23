@@ -2,8 +2,53 @@
  *多个页面需要用到的基础样式
  *例子如下
  */
-
-body, p {
-  padding: 0;
+blockquote,
+body,
+button,
+caption,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+html,
+input,
+legend,
+li,
+menu,
+ol,
+p,
+pre,
+table,
+td,
+textarea,
+th,
+ul {
   margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+// 默认字体微软雅黑 - momo
+body,
+button,
+input,
+keygen,
+legend,
+select,
+textarea {
+  font-family: "Microsoft Yahei";
+  color: #333;
+  outline: 0;
+}
+i {
+  font-style: normal;
 }

@@ -1,0 +1,333 @@
+//  婚纱店介绍页面制作 - Momo
+.weidding-shop-warp {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+// 头顶背景图
+.weidding-shop-bg {
+  position: relative;
+  .shop-bg-pic {
+    display: block;
+    width: 100%;
+    max-height: 315px;
+  }
+  a {
+    position: absolute;
+    left: 22px;
+    top: 20px;
+  }
+  .title-pic {
+    padding: 4px;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 5px;
+    position: absolute;
+    left: 20px;
+    bottom: -62px;
+    img {
+      width: 162px;
+      height: 162px;
+    }
+  }
+}
+.shop-title {
+  position: absolute;
+  right: 0;
+  bottom: 27px;
+  h2 {
+    float: left;
+    font-size: 24px;
+    color: #fff;
+    line-height: 58px;
+  }
+  .collection-btn {
+    float: left;
+    padding: 18px 28px;
+    color: #fff;
+    background-color: #ff6600;
+    font-size: 20px;
+    border: 0;
+    margin-left: 97px;
+  }
+}
+// 内容部分
+.weidding-shop-content {
+  .weidding-shop-address {
+    background-color: #fff;
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-bottom: 23px;
+    margin-top: 22px;
+    font-size: 22px;
+    p {
+      margin-bottom: 12px;
+    }
+  }
+}
+// tab部分
+.shop-tabs {
+  background-color: #fff;
+  padding-left: 226px;
+  display: flex;
+  li {
+    font-size: 26px;
+    flex-grow: 1;
+    padding: 30px 25px;
+    text-align: center;
+    a {
+      color: #444;
+    }
+  }
+  .active {
+    border-bottom: 4px solid #ff6600;
+  }
+}
+.tabs .indicator {
+  height: 4px;
+  background-color: #ff6600;
+}
+// 商品搜索
+.weidding-search-box {
+  position: relative;
+  height: 88px;
+  line-height: 88px;
+  text-align: center;
+}
+.weidding-search-bar {
+  width: 550px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  .search-btn {
+    float: left;
+    width: 74px;
+    height: 54px;
+    border: 1px solid #565656;/*no*/
+    border-right: 0;
+    border-radius: 30px 0 0 30px;
+    background-color: #fff;
+  }
+  .search-text {
+    float: left;
+    width: 474px;
+    height: 54px;
+    line-height: 54px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 0 30px 30px 0;
+    border: 1px solid #565656;/*no*/
+    border-left: 0;
+    margin: 0;
+    box-sizing: inherit;
+    -webkit-appearance: none;
+  }
+}
+// banner切换部分
+.shop-slider-box {
+  max-height: 357px;
+  .indicators {
+    bottom: 8px;
+    z-index: 1000;
+    .indicator-item {
+      width: 16px;
+      height: 16px;
+      background-color: #fff;
+      margin: 0 7.5px;
+    }
+  }
+}
+// 内容列表
+.shop-content-list {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -4%;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    width: 46%;
+    float: left;
+    margin-top: 20px;
+    margin-left: 4%;
+    background-color: #fff;
+    padding: 6px 8px 18px;
+    .shop-list-pic {
+      width: 100%;
+      height: 297px;
+    }
+    h2 {
+      font-size: 22px;
+      line-height: 1.5em;;
+    }
+    .shop-list-price {
+      display: flex;
+      padding-top: 18px;
+      height: 60px;
+      justify-content: flex-end;
+      span {
+        font-size: 22px;
+        color: #f00;
+        flex-grow: 1;
+        align-self: flex-end;
+      }
+    }
+  }
+}
+// 商品列表
+.goods-search {
+  display: flex;
+  align-content:center;
+  width: 100%;
+  height: 88px;
+  padding-left: 20px;
+  padding-right: 20px;
+  .icon-home {
+    width: 50px;
+    align-self:center;
+  }
+  .search-input {
+    width: 450px;
+    height: 70px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 0;
+    background-color: #fff;
+    text-indent: 35px;
+    font-size: 30px;
+    border: 0;
+    align-self:center;
+    &:placeholder {
+      color: #ababab;
+    }
+  }
+  .icon-switch {
+    width: 48px;
+    align-self:center;
+  }
+}
+
+// 商品分类
+.categroy-search{
+  display: flex;
+  height: 88px;
+  background-color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+  .icon-back-l{
+    width: 66px;
+    align-self: center;
+  }
+  .search-input{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f2f2f2;
+    text-indent: 25px;
+    font-size: 30px;
+    border: 0;
+    border-radius: 5px;
+    align-self: center;
+    margin-bottom: 0;
+    &::placeholder{
+      color: #ababab;
+    }
+  }
+}
+
+// 商品内容分类
+.all-categroy{
+  height: 90px;
+  line-height: 90px;
+  padding-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  a{
+    font-size: 30px;
+    color: #444;
+  }
+}
+.categroy-list{
+  background-color: #fff;
+  li{
+    margin-top: 25px;
+    color: #444;
+    .categroy-title{
+      display: flex;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 25px;
+      h2{
+        flex-grow: 1;
+        font-size: 30px;
+      }
+      .all-title{
+        justify-content:flex-end;
+        font-size: 24px;
+        align-self: flex-end;
+        color: #444;
+      }
+    }
+    .categroy-info{
+      display: flex;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-left: -3%;
+      flex-wrap: wrap;
+      a{
+        display: inline-block;
+        flex-grow: 1;
+        width: 47%;
+        height: 85px;
+        font-size: 30px;
+        line-height: 85px;
+        text-align: center;
+        color: #ababab;
+        background-color: #f2f2f2;
+        margin-left: 3%;
+        margin-top: 25px;
+      }
+    }
+    .categroy-label{
+      display: flex;
+      height: 90px;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-bottom: 1px solid #e1e1e1;/*no*/
+      .label-title{
+        flex-grow: 1;
+        padding-left: 30px;
+        align-self: center;
+        font-size: 30px;
+        color: #444;
+      }
+      .icon-back-r{
+        display: block;
+        padding-right: 52px;
+        align-self: center;
+      }
+    }
+  }
+}
+@media (max-width:414px) {
+  .shop-title .collection-btn {
+    margin-left: 60px;
+  }
+  .shop-content-list {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -2%;
+  }
+  .shop-content-list li {
+    width: 48%;
+    margin-left: 2%;
+  }
+}
+@media (max-width:320px) {
+  .shop-title .collection-btn {
+    margin-left: 20px;
+  }
+}

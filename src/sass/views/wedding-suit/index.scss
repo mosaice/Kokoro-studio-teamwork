@@ -1,0 +1,71 @@
+// 婚礼套餐页面
+@import "./icon";
+@import "./nav";
+@import "./cross";
+@import "./upright";
+@import "./sidenav";
+
+// 列表主题内容
+.list-box-content {
+  .list-box-content-pic {
+    width: 100%;
+    height: 250px;
+  }
+  .list-box-content-title {
+    color: #444;
+    margin-top: 20px;
+    line-height: 30px;
+    h2 {
+      font-size: 30px;
+    }
+    .title-color {
+      font-size: 20px;
+      float: none!important;
+      margin-top: 10px;
+      span {
+        display: block;
+        float: left;
+        line-height: 30px;
+      }
+      img {
+        display: block;
+        float: left;
+        width: 26px;
+        height: 30px;
+      }
+    }
+  }
+  .list-box-content-info {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  .wedding-icon {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    p{
+      display: inline;
+    }
+    span{
+      display: none;
+    }
+  }
+}
+// 婚纱套装加载更多
+.wedding-suti-more {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  button {
+    font-size: 20px;
+    color: #565656;
+    background-color: #d8d8d8;
+    padding: 13px 267px;
+    border: 0;
+  }
+}
+
+@media (max-width:320px) {
+  .wedding-suti-list-upright .list-box-content .list-box-content-info{
+    margin-top: 20px;
+  }
+}

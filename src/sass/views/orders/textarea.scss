@@ -1,0 +1,35 @@
+// 输入框表单样式
+.form-textarea{
+  position: relative;
+  height: 410px;
+  padding-top: 15px;
+  background-color: #f2f2f2;
+  margin-top: -1px;
+  .textarea-warp{
+    height: 380px;
+    padding: 45px 49px 20px;
+    background-color: #fff;
+  }
+  textarea{
+    height: 100%;
+    border: 1px solid #e1e1e1;/*no*/
+    resize:none;
+    font-size: 24px;
+    text-indent: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow: hidden;
+  }
+  textarea::placeholder{
+    display: block;
+    text-align: center;
+    line-height: 315px;
+    color: #e1e1e1;
+  }
+}
+
+// <div class="row form-textarea">
+//   <div class="textarea-warp">
+//     <textarea name="name" placeholder="在这里输入评价"></textarea>
+//   </div>
+// </div>

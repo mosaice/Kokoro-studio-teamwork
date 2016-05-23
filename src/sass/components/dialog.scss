@@ -1,0 +1,39 @@
+// css画星星代码
+.dialog {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  .content {
+    width: 560px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(0,-50%,0);
+    margin-left: -280px;
+    background: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    padding: 30px 60px;
+    border-radius: 10px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.2rem;
+    .btn {
+      background: $primary-color;
+      width: 360px;
+      border-radius: 10px;
+      box-shadow: none;
+      color: #fff;
+      font-size: $l-fontSize;
+    }
+  }
+  .tel {
+    margin: 20px 0;
+  }
+}

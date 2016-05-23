@@ -1,0 +1,57 @@
+// 通用头顶标题栏 - Momo
+.top-title{
+  position: relative;
+  height: 88px;
+  line-height: 88px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #e1e1e1;/*no*/
+  a{
+    position: relative;
+    z-index: 10;
+    vertical-align: middle;
+  }
+  .top-return{
+    width: 22px;
+    height: 49px;
+  }
+  h1{
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 30px;
+    color: #f60;
+    text-align: center;
+    line-height: 88px;
+  }
+}
+
+// <div class="row top-title">
+//   <a href="">
+//     <img src="static/assets/images/icon/arrow-r.png" alt="" class="top-return" title="">
+//   </a>
+//   <h1>待评价订单</h1>
+// </div>
+.line-title {
+  position: relative;
+  background: #fff;
+  h2 {
+    height: 80px;
+    line-height: 80px;
+    display: inline-block;
+    font-size: $l-fontSize;
+    padding: 0 10px;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+  }
+  .line {
+    border-top: 1px solid $border-color;/*no*/
+    position: absolute;
+    top: 39px;
+    width: 100%;
+  }
+}

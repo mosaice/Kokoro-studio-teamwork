@@ -2,6 +2,13 @@
  * 多个页面公用的变量存放文件
  * 例子如下
  */
-
 /* 页面主色调 蓝色 */
-$primary-color: blue;
+$primary-color: #72cfc7; // old - color = bule || editor - momo
+/* 默认字体中等字体24px */
+$m-fontSize: 24px; // editor - libang
+/* 默认字体大字体30px */
+$l-fontSize: 30px; // editor - libang
+/* 默认边框颜色 */
+$border-color: #e1e1e1; // editor - libang
+/* 默认背景颜色 */
+$background-color: #f2f2f2; // editor - libang

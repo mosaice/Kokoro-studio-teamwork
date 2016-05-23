@@ -1,0 +1,144 @@
+// 修改弹窗样式
+.side-nav{
+  top: 40px;
+  width: 98%;
+  .side-box{
+    padding-left: 20px;
+    background-color: #fff;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 17px solid #f2f2f2;
+    &:nth-last-of-type(2){
+      border-bottom: 0;
+    }
+  }
+  // sidenav的每个标题
+  .sidenav-title{
+    height: 69px;
+    line-height: 69px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid #e1e1e1;/*no*/
+  }
+
+  // <div class="sidenav-title amber-text text-darken-4">
+  //   颜色
+  // </div>
+
+
+  .nav-screening{
+    dd{
+      width: 30%;
+      float: left;
+      font-size: 24px;
+      color: #787878;
+      padding-top: 20px;
+    }
+  }
+
+  // <dl class="nav-screening clearfix">
+  //   <dd>中式</dd>
+  //   <dd>西式</dd>
+  //   <dd>户外</dd>
+  //   <dd>特惠套餐</dd>
+  //   <dd>豪华套餐</dd>
+  // </dl>
+
+}
+
+.side-nav .nav-color-box{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .nav-color{
+    margin-bottom: 50px;
+    dt{
+      float: left;
+      width: 25%;
+      font-size: 30px;
+      vertical-align: bottom;
+    }
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+// 金钱筛选部分
+.side-nav .sidenav-money{
+  p{
+    margin-top: 20px;
+    font-size: 24px;
+    color: #949494;
+  }
+  .inputbox{
+    margin-top: 30px;
+  }
+  input[type=text]{
+    float: left;
+    width: 289px;
+    height: 75px;
+    border: 1px solid #ababab;/*no*/
+    font-size: 20px;
+    text-indent: 1rem;
+    color: #ababab;
+  }
+
+  // <div class="side-box sidenav-money">
+  //   <div class="sidenav-title amber-text text-darken-4">
+  //     价格区间
+  //   </div>
+  //   <p>5000以下</p>
+  //   <p>￥5,000 - 8,000</p>
+  //   <p>￥8,000 - 10,000</p>
+  //   <p>￥10,000 - 12,000</p>
+  //   <div class="inputbox clearfix">
+  //     <input type="text" name="name" value="">
+  //     <i class="rung"></i>
+  //     <input type="text" name="name" value="">
+  //   </div>
+  // </div>
+
+  // 中间的横县
+  .rung{
+    display: block;
+    width: 78px;
+    height: 3px;
+    background-color: #444444;
+    float: left;
+    margin-top: 37px;
+    margin-left: 19px;
+    margin-right: 19px;
+  }
+}
+
+                // <i class="rung"></i>
+
+
+// 底下重置和确定按钮
+.side-nav .sidenav-submit{
+  border-top: 1px solid #e1e1e1;
+  padding-top: 36px;
+  text-align: right;
+  a{
+    display: inline;
+    font-size: 30px;
+    padding: 0;
+    margin-right: 43px;
+  }
+  .btn-submit{
+    height: 67px;
+    line-height: 67px;
+    padding-left: 64px;
+    padding-right: 64px;
+    box-shadow:none;
+    border-radius: 10px;
+    background-color: $primary-color;
+    font-size: 30px;
+  }
+}
+
+// <div class="inputbox clearfix">
+//   <input type="text" name="name" value="">
+//   <i class="rung"></i>
+//   <input type="text" name="name" value="">
+// </div>

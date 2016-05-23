@@ -1,0 +1,130 @@
+.feedback-page {
+  height: 100%;
+  background-color: $background-color;
+}
+
+.suggestion {
+  margin-top: 15px;
+  height: 88px;
+  line-height: 88px;
+  background-color: #fff;
+  span {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 41px;
+    font-size: 30px;
+  }
+  .dropdown-select {
+    display: inline-block;
+    margin-bottom: 5px;
+    padding-left: 17px;
+    width: 491px;
+    height: 61px;
+    line-height: 61px;
+    text-align: left;
+    font-size: $m-fontSize;
+    color: #787878;
+    background-color: #fff;
+    box-shadow: none;
+    -weblit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    border: 1px solid #ababab;/*no*/
+    span {
+      display: inline-block;
+      float: right;
+      margin-top: -2px;
+      width: 66px;
+      height: 61px;
+      border-left: 1px solid #ababab;/*no*/
+      background: url(../assets/images/icon/select-arrow.png) no-repeat center center;
+      background-size: 40px 40px;
+      -webkit-background-size: 40px 40px;
+      -moz-background-size: 40px 40px;
+      -ms-background-size: 40px 40px;
+      -o-background-size: 40px 40px;
+    }
+  }
+  .dropdown-content {
+    margin-top: 61px;
+    padding-bottom: 160px;
+    border: 2px solid #ababab;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    -o-box-shadow: none;
+    li {
+      width: 100%;
+      min-height: 90px;
+      a {
+        padding: 0 16px;
+        height: 90px;
+        line-height: 90px;
+        font-size: $m-fontSize;
+        color: #787878;
+      }
+      .active {
+        color: #fff;
+        background-color: $primary-color;
+      }
+    }
+  }
+}
+
+.feedbackinfo {
+  position: relative;
+  background-color: #fff;
+  height: 455px;
+  margin-top: 15px;
+  img {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    height: 470px;
+    opacity: 0.7;
+    z-index: 111;
+  }
+  .textarea-box {
+    height: 356px;
+    padding: 20px 49px;
+    background-color: #fff;
+    textarea {
+      height: 100%;
+      border: 2px solid #e1e1e1;
+      resize: none;
+      font-size: 24px;
+      text-indent: 20px;
+      padding-left: 10px;
+      padding-top: 10px;
+      overflow: hidden;
+    }
+    textarea::placeholder {
+      display: block;
+      text-align: center;
+      line-height: 315px;
+      font-size: 32px;
+      color: #ababab;
+    }
+    span {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 30px;
+      color: #ababab;
+    }
+    .text-btn {
+      display: inline-block;
+      float: right;
+      margin-top: 20px;
+      width: 177px;
+      height: 66px;
+      line-height: 66px;
+      border-radius: 5px;
+      text-align: center;
+      color: #fff;
+      background-color: #f60;
+    }
+  }
+}

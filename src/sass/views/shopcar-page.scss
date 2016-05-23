@@ -1,0 +1,191 @@
+[type="checkbox"] + label {
+  max-width: 60%;
+}
+.ml-60 {
+  margin-left: 60px;
+}
+.shopcar-page {
+  margin-bottom: 98px;
+  .part-title {
+    border-bottom: none;
+  }
+  .orders-content {
+    padding-left: 20px;
+    border-top: 1px solid $border-color;/*no*/
+    border-bottom: none;
+    .orders-content-r {
+      margin-bottom: 15px;
+    }
+  }
+  .order-price-info {
+    margin-bottom: 20px;
+    width: 640px;
+  }
+  .active {
+    display: block;
+  }
+}
+.clearing {
+  height: 98px;
+  border-top: 2px solid $border-color;
+  p {
+    padding-left: 20px;
+    line-height: 98px;
+    label {
+      font-size: 24px;
+      color: #444;
+    }
+    span {
+      padding-right: 10px;
+      font-size: 24px;
+    }
+    a {
+      font-weight: 400;
+      width: 190px;
+    }
+  }
+}
+.js_checkbox {
+  dt {
+    position: relative;
+  }
+  .edit {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 405px;
+    height: 160px;
+    line-height: 160px;
+    z-index: 25;
+    .edit-num {
+      width: 67%;
+      height: 100%;
+      padding: 60px 15px;
+      font-size: 30px;
+      background-color: $background;
+    }
+    .edit-delete {
+      height: 100%;
+      width: 33%;
+      line-height: 160px;
+      text-align: center;
+      background-color: $primary-color;
+      a {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+  }
+  .active {
+    display: block;
+  }
+}
+.moniinput {
+  input {
+    margin-top: -5px;
+    text-indent: 40px;
+    width: 85px;
+    height: 44px;
+    font-size: 30px;
+    border: 1px solid $border-color;/*no*/
+  }
+  .spinner {
+    margin-top: -5px;
+    width: 25px;
+    height: 48px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    border: 1px solid $border-color;/*no*/
+    border-left: none;
+    .js_numadd {
+      padding-bottom: 2px;
+      div {
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-bottom: 10px solid #444;
+      }
+    }
+    .js_numminus {
+      padding-top: 2px;
+      div {
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top: 10px solid #444;
+      }
+    }
+  }
+}
+.js_checkbox {
+  position: relative;
+  .edit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 405px;
+    height: 160px;
+    line-height: 160px;
+    z-index: 25;
+    .edit-num {
+      width: 67%;
+      height: 100%;
+      padding: 60px 15px;
+      font-size: 30px;
+      background-color: $background;
+      .aaa {
+        .spinner {
+          margin-top: -5px;
+          width: 25px;
+          height: 46px;
+          box-sizing: border-box;
+          border: 1px solid $border-color;/*no*/
+          border-left: none;
+          .js_numadd {
+            padding-bottom: 2px;
+            div {
+              width: 0;
+              height: 0;
+              border: 10px solid transparent;
+              border-bottom: 10px solid #444;
+            }
+          }
+          .js_numminus {
+            padding-top: 2px;
+            div {
+              width: 0;
+              height: 0;
+              border: 10px solid transparent;
+              border-top: 10px solid #444;
+            }
+          }
+        }
+      }
+      input {
+        margin-top: -5px;
+        text-indent: 40px;
+        width: 85px;
+        height: 44px;
+        font-size: 30px;
+        border: 1px solid $border-color;/*no*/
+      }
+    }
+    .edit-delete {
+      height: 100%;
+      width: 33%;
+      line-height: 160px;
+      text-align: center;
+      background-color: $primary-color;
+      a {
+        display: block;
+        font-size: 30px;
+        color: #fff;
+      }
+    }
+  }
+}

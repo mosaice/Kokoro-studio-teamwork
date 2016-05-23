@@ -1,0 +1,33 @@
+// 用户信息 - libang
+  .user-info {
+    height: 190px;
+    padding: 35px 15px 35px 35px;
+    border-bottom: 1px solid $border-color;/*no*/
+    background: #fff;
+    position: relative;
+    .avtor {
+      width: 125px;
+      height: 125px;
+      border: 1px solid #fff;/*no*/
+      border-radius: 50%;
+    }
+    .name-info {
+      color: #787878;
+      font-size: 24px;
+      padding: 10px 30px;
+      p:last-child {
+        margin-top: 30px;
+      }
+    }
+    .front {
+      right: 20px!important;
+    }
+  }
+// <div class="user-info clearfix">
+//   <img src="static/assets/images/content/bg01.jpg" alt="" title="" class="left  avtor">
+//   <div class="name-info left">
+//     <p><span>姓名：</span><span>孙恺</span></p>
+//     <p><span>婚期：</span><span>2020-05-20</span></p>
+//   </div>
+//   <a href="#"><img src="static/assets/images/icon/front.png" alt="" title="" class="right front"></a>
+// </div>
