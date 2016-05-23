@@ -151,7 +151,7 @@
   background-color: #fff;
   .fz30 {
     padding: 25px 0;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;/*no*/
     font-size: 30px;
     color: #f60;
     text-align: center;
@@ -179,8 +179,11 @@
   .package-address {
     padding: 30px 50px 0;
     height: 200px;
-    border-bottom: 1px dotted #444;
+    border-bottom: 1px dotted #444;/*no*/
     @media(max-width: 320px) {
+    padding: 30px 20px 0;
+    }
+    @media(min-width: 769px) {
     padding: 30px 20px 0;
     }
     li {
@@ -188,7 +191,7 @@
       width: 30%;
       height: 65px;
       line-height: 65px;
-      border: 2px solid #5a5a5a;
+      border: 1px solid #5a5a5a;/*no*/
       text-align: center;
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
@@ -234,7 +237,7 @@
   li {
     float: left;
     width: 25%;
-    border-right: 1px solid $border-color;
+    border-right: 1px solid $border-color;/*no*/
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

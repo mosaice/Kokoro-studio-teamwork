@@ -15,12 +15,30 @@ input[type=checkbox]+label:before{
   height: 30px;
   border-radius: 50%;
   margin-top: -2px;
-  border: 1px solid #7c7a7a;
+  border: 1px solid #7c7a7a;/*no*/
 }
-[type="checkbox"]:checked+label:before{
-  top: -4px;
-  left: -5px;
-  width: 15px;
-  height: 30px;
-  border-radius: 0;
+// [type="checkbox"]:checked+label:before{
+//   top: -4px;
+//   left: -5px;
+//   width: 15px;
+//   height: 30px;
+//   border-radius: 0;
+// }
+
+input[type=checkbox] + label.checked:before {
+    top: -4px;
+    left: -5px;
+    width: 15px;
+    height: 30px;
+    border-radius: 0;
+    border-top: 2px solid transparent;/*no*/
+    border-left: 2px solid transparent;/*no*/
+    border-right: 2px solid #26a69a;/*no*/
+    border-bottom: 2px solid #26a69a;/*no*/
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%
 }

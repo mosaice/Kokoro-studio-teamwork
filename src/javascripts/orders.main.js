@@ -3,7 +3,7 @@ $(function() {
   var $Checkbox = $('dl.js_checkbox');
   var $ChildCheck = $('input.js_child_check');
 
-  CheCked.ClickOfAll($ParentCheck, $ChildCheck, $Checkbox);
+  // CheCked.ClickOfAll($ParentCheck, $ChildCheck, $Checkbox);
   CheCked.ClickOfChild($ParentCheck, $ChildCheck, $Checkbox);
 
     $('#function-star1').raty({
