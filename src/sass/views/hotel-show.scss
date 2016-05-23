@@ -55,7 +55,7 @@
 		font-size: 24px;
 		color: #777777;
 		font-family: "微软雅黑";
-		border-bottom: 1px solid #E1E1E1;/*no*/
+		border-bottom: 0.025rem solid #E1E1E1;
 
 	}
 }
@@ -66,7 +66,7 @@
 	font-size: 30px;
 	p {
 		line-height: 100px;
-		border-bottom: 1px solid #e1e1e1;/*no*/
+		border-bottom: 1px solid #e1e1e1;
 		font-size: 30px;
 
 	}
@@ -78,7 +78,7 @@
 		line-height: 80px;
 		padding: 0;
 		color: #555555;
-		border-bottom: 1px solid #E1E1E1;/*no*/
+		border-bottom: 1px solid #E1E1E1;
 
 		background: url("../assets/images/icon/arrow-s1.png") no-repeat;
 		background-size: 16px 28px;
@@ -156,7 +156,7 @@
 			color: white;
 		}
 		.earphone {
-			border-right: 1px solid #E1E1E1;/*no*/
+			border-right: 1px solid #E1E1E1;
 			img {
 				width: 60px;
 				height: 47px;
@@ -213,7 +213,7 @@
 				font-size: 30px;
 				height: 69px;
 				line-height: 69px;
-				border-bottom: 1px solid #e1e1e1;/*no*/
+				border-bottom: 1px solid #e1e1e1;
 			}
 			.menu-info {
 				line-height: 1.7em;

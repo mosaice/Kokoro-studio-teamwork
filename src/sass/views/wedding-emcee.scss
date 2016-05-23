@@ -102,7 +102,7 @@
     border: none;
   }
   li:nth-of-type(1) {
-    border-right: 1px solid $border-color;/*no*/
+    border-right: 1px solid $border-color;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -127,7 +127,7 @@
   .emcee-photo {
     height: 205px;
     padding: 20px;
-    border-bottom: 1px solid $border-color;/*no*/
+    border-bottom: 1px solid $border-color;
     img {
       float: left;
       width: 248px;
@@ -154,7 +154,7 @@
       padding-left: 28px;
       height: 73px;
       line-height: 73px;
-      border: 1px solid $border-color;/*no*/
+      border: 1px solid $border-color;
       border-radius: 9px;
       font-size: 24px;
       color: #787878;
@@ -164,7 +164,7 @@
       }
     }
     .active {
-      border: 1px solid #f00;/*no*/
+      border: 1px solid #f00;
     }
   }
 }

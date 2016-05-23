@@ -17,7 +17,7 @@
   input {
     width: 453px;
     height: 75px;
-    border: 1px solid #787878;/*no*/
+    border: 2px solid #787878;
     font-size: 26px;
     text-indent: 20px;
   }
@@ -68,13 +68,13 @@
   }
   li {
     padding: 15px 20px 15px 50px;
-    border-bottom: 1px solid $border-color;/*no*/
+    border-bottom: 2px solid $border-color;
     img {
       float: left;
       margin-top: 10px;
       width: 120px;
       height: 120px;
-      border: 1px solid #393939;/*no*/
+      border: 1px solid #393939;
     }
     .active {
       display: block;
@@ -128,7 +128,7 @@
     display: block;
     padding: 0 50px;
     line-height: 2;
-    border-bottom: 1px solid $border-color;/*no*/
+    border-bottom: 2px solid $border-color;
     font-size: 26px;
     color: #444;
     .fontgray {
